@@ -1,0 +1,16 @@
+/**
+ * main css file
+ * loads this app's stylesheets
+ */
+@import "tailwindcss/base";
+/*@import "css-base-loader.css";*/
+
+@import "tailwindcss/components";
+/*@import "./css-components-loader.css";*/
+
+a {
+  @apply text-lime-500;
+}
+
+@import "tailwindcss/utilities";
+/*@import "css-utilities-loader.css";*/

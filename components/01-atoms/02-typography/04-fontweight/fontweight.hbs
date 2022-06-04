@@ -1,0 +1,24 @@
+
+<div class="prose max-w-none">
+  <div class="prose">
+    <h1>Font Weight</h1>
+  </div>
+  <table class="table-auto border-collapse w-full overflow-hidden">
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Value</th>
+      <th>Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each weights}}
+    <tr>
+      <td>{{ class }}</td>
+      <td>{{ value }}</td>
+      <td class="text-2xl {{ class }}">The quick brown fox jumps over the lazy dog</td>
+    </tr>
+    {{/each}}
+  </tbody>
+  </table>
+</div>

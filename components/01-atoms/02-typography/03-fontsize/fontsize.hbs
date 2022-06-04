@@ -1,0 +1,28 @@
+
+<div class="prose max-w-none">
+  <div class="prose">
+    <h1>Font Size</h1>
+    <p><strong>Font</strong>: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif</p>
+    <p><strong>Weights</strong>: 400(regular), 700(bold), 800(extrabold)</p>
+  </div>
+  <table class="table-auto border-collapse w-full overflow-hidden">
+  <thead>
+    <tr>
+      <th>class</th>
+      <th>rem</th>
+      <th>px</th>
+      <th>sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each sizes}}
+    <tr>
+      <td>{{ class }}</td>
+      <td>{{ rem }}</td>
+      <td>{{ px }}</td>
+      <td class="{{ class }}">The quick brown fox jumps over the lazy dog</td>
+    </tr>
+    {{/each}}
+  </tbody>
+  </table>
+</div>

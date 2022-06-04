@@ -1,9 +1,9 @@
-assets
-components
-css-input
-css-output
-docs
-index.js
+./assets
+./components
+./css-input
+./css-output
+./docs
+./index.js
 node_modules
-stories
+./stories
 

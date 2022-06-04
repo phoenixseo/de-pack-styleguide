@@ -1,0 +1,16 @@
+<div class="prose leading-tight">
+  <h1>Members</h1>
+
+  <ul>
+    {{#each members}}
+    <li>
+      <img src="{{ avatar }}" class="rounded-full" width="64" height="64">
+      <p>
+        <strong>{{ name }}</strong>
+        <br>{{ email }}
+        <br>{{ address }}
+      </p>
+    </li>
+    {{/each}}
+  <ul>
+</div>

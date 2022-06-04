@@ -1,0 +1,44 @@
+{
+  "title": "Font Weight",
+  "label": "Font Weight",
+  "context": {
+    "weights": [
+      {
+        "class": "font-thin",
+        "value": "100"
+      },
+      {
+        "class": "font-extralight",
+        "value": "200"
+      },
+      {
+        "class": "font-light",
+        "value": "300"
+      },
+      {
+        "class": "font-normal",
+        "value": "400"
+      },
+      {
+        "class": "font-medium",
+        "value": "500"
+      },
+      {
+        "class": "font-semibold",
+        "value": "600"
+      },
+      {
+        "class": "font-bold",
+        "value": "700"
+      },
+      {
+        "class": "font-extrabold",
+        "value": "800"
+      },
+      {
+        "class": "font-black",
+        "value": "900"
+      }
+    ]
+  }
+}
