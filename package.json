@@ -1,0 +1,21 @@
+{
+  "name": "fractal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fractal:build": "fractal build",
+    "fractal:start": "fractal start --sync"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.13",
+    "faker": "^6.6.6",
+    "mono-fractal": "^1.1.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.1.0"
+  }
+}
