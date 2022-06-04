@@ -79,6 +79,46 @@
         "label": "Queen-Blue",
         "class": "queen-blue-100",
         "value": "#5b96c2"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-200",
+        "value": "#4c8cbd"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-300",
+        "value": "#4282b3"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-400",
+        "value": "#3d77a4"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-500",
+        "value": "#33658a"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-600",
+        "value": "#326186"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-700",
+        "value": "#2c5777"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-800",
+        "value": "#274c68"
+      },
+      {
+        "label": "Queen-Blue",
+        "class": "queen-blue-900",
+        "value": "#214159"
       }
     ]
   }
