@@ -1,0 +1,34 @@
+{
+  "title": "DE-PACK.de Colorset",
+  "label": "DE-PACK.de",
+  "status": "ready",
+  "context": {
+    "primary": [
+      {
+        "label": "DE-PACK Red",
+        "class": "???",
+        "value": "#C4182A"
+      },
+      {
+        "label": "Dark Dark",
+        "class": "???",
+        "value": "#262626"
+      },
+      {
+        "label": "Lighter Dark",
+        "class": "???",
+        "value": "#4e4e4e"
+      },
+      {
+        "label": "White",
+        "class": "white",
+        "value": "#ffffff"
+      },
+      {
+        "label": "Black",
+        "class": "black",
+        "value": "#000000"
+      }
+    ]
+  }
+}
