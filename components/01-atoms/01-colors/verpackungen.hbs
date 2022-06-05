@@ -20,10 +20,70 @@
   <h2>Color Shades</h2>
   <p>Dies sind die Schattierungen der Primärfarben, die verwendet werden können.</p>
 </div>
+
+
+<div class="prose m-4">
+  <h3>Honey-Yellow Color Shades</h3>
+  <p>Dies sind die Schattierungen.</p>
+</div>
 <div class="grid grid-cols-9 gap-8">
-  {{#each colors}}
+  {{#each honeyyellow}}
   <div class="flex flex-col">
-    <div class="w-32 h-32" style="background-color: {{ value }};">
+    <div class="w-32 h-48" style="background-color: {{ value }};">
+    </div>
+    <div class="text-sm font-medium bg-stone-100 text-center p-2">
+      <div class="font-bold">{{ label }}</div>
+      <div>{{ class }}</div>
+      <div class="select-all font-mono">{{ value }}</div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="prose m-4">
+  <h3>Queen-Blue Color Shades</h3>
+  <p>Dies sind die Schattierungen.</p>
+</div>
+<div class="grid grid-cols-9 gap-8">
+  {{#each queenblue}}
+  <div class="flex flex-col">
+    <div class="w-32 h-48" style="background-color: {{ value }};">
+    </div>
+    <div class="text-sm font-medium bg-stone-100 text-center p-2">
+      <div class="font-bold">{{ label }}</div>
+      <div>{{ class }}</div>
+      <div class="select-all font-mono">{{ value }}</div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="prose m-4">
+  <h3>DarkSky-Blue Color Shades</h3>
+  <p>Dies sind die Schattierungen.</p>
+</div>
+<div class="grid grid-cols-9 gap-8">
+  {{#each darkskyblue}}
+  <div class="flex flex-col">
+    <div class="w-32 h-48" style="background-color: {{ value }};">
+    </div>
+    <div class="text-sm font-medium bg-stone-100 text-center p-2">
+      <div class="font-bold">{{ label }}</div>
+      <div>{{ class }}</div>
+      <div class="select-all font-mono">{{ value }}</div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="prose m-4">
+  <h3>Charcoal Color Shades</h3>
+  <p>Dies sind die Schattierungen.</p>
+</div>
+<div class="grid grid-cols-9 gap-8">
+  {{#each charcoal}}
+  <div class="flex flex-col">
+    <div class="w-32 h-48" style="background-color: {{ value }};">
     </div>
     <div class="text-sm font-medium bg-stone-100 text-center p-2">
       <div class="font-bold">{{ label }}</div>

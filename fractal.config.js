@@ -19,6 +19,39 @@ fractal.docs.set('path', __dirname + '/docs');
 /* Tell Fractal where to put the static build */
 fractal.web.set('builder.dest', __dirname + '/web');
 
+/* Statuses */
+fractal.components.set('statuses', {
+  prototype: {
+    label: "Prototype",
+    description: "Do not implement.",
+    color: "#ff3333"
+  },
+  wip: {
+    label: "WIP",
+    description: "Work in progress. Implement with caution.",
+    color: "#ff9233"
+  },
+  ready: {
+    label: "Ready",
+    description: "Ready to implement.",
+    color: "#29cc29"
+  }
+});
+
+fractal.docs.set('statuses', {
+  draft: {
+    label: "Draft",
+    description: "Work in progress.",
+    color: "#ff3333"
+  },
+  ready: {
+    label: "Ready",
+    description: "Ready for referencing.",
+    color: "#29cc29"
+  }
+});
+
+
 
 /*
  * Theme

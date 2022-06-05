@@ -1,6 +1,7 @@
 {
   "title": "Verpackungen.de Colorset",
   "label": "Verpackungen.de",
+  "status": "ready",
   "context": {
     "primary": [
       {
@@ -29,7 +30,7 @@
         "value": "#2f4858"
       }
     ],
-    "colors": [
+    "honeyyellow": [
       {
         "label": "Honey-Yellow",
         "class": "honey-yellow-100",
@@ -74,7 +75,9 @@
         "label": "Honey-Yellow",
         "class": "honey-yellow-900",
         "value": "#d78f09"
-      },
+      }
+    ],
+    "queenblue": [
       {
         "label": "Queen-Blue",
         "class": "queen-blue-100",
@@ -119,6 +122,100 @@
         "label": "Queen-Blue",
         "class": "queen-blue-900",
         "value": "#214159"
+      }
+    ],
+    "darkskyblue": [
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-100",
+        "value": "#d1e5f0"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-200",
+        "value": "#c1dceb"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-300",
+        "value": "#b2d4e6"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-400",
+        "value": "#a3cbe1"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-500",
+        "value": "#86bbd8"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-600",
+        "value": "#84bad7"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-700",
+        "value": "#74b1d2"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-800",
+        "value": "#65a9cd"
+      },
+      {
+        "label": "DarkSky-Blue",
+        "class": "darksky-blue-900",
+        "value": "#56a0c8"
+      }
+    ],
+    "charcoal": [
+      {
+        "label": "Charcoal",
+        "class": "charcoal-100",
+        "value": "#4f7892"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-200",
+        "value": "#476d85"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-300",
+        "value": "#406277"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-400",
+        "value": "#39576a"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-500",
+        "value": "#2f4858"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-600",
+        "value": "#2b4150"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-700",
+        "value": "#243742"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-800",
+        "value": "#1d2c35"
+      },
+      {
+        "label": "Charcoal",
+        "class": "charcoal-900",
+        "value": "#152128"
       }
     ]
   }

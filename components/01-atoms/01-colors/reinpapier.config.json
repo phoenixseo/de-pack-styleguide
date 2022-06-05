@@ -1,0 +1,68 @@
+{
+  "title": "Reinpapier.de Colorset",
+  "label": "Reinpapier.de",
+  "status": "wip",
+  "context": {
+    "primary": [
+      {
+        "label": "Lime",
+        "class": "lime-700",
+        "value": "#4d7c0f"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-700",
+        "value": "#44403c"
+      }
+    ],
+    "stone": [
+      {
+        "label": "Stone",
+        "class": "stone-50",
+        "value": "#fafaf9"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-100",
+        "value": "#f5f5f4"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-200",
+        "value": "#e7e5e4"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-500",
+        "value": "#78716c"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-700",
+        "value": "#44403c"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-900",
+        "value": "#1c1917"
+      }
+    ],
+    "text": [
+      {
+        "label": "Stone",
+        "class": "stone-500",
+        "value": "#78716c"
+      },
+      {
+        "label": "Stone",
+        "class": "stone-700",
+        "value": "#44403c"
+      },
+      {
+        "label": "Lime",
+        "class": "lime-700",
+        "value": "#4d7c0f"
+      }
+    ]
+  }
+}
