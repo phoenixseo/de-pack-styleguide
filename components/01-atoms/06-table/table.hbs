@@ -1,0 +1,23 @@
+<div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
+
+<table class="border-collapse">
+  <thead>
+    <tr>
+      {{#each tablehead}}
+      <th>{{ thcontent }}</th>
+      {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{ one }}</td>
+      <td>{{ two }}</td>
+      <td>{{ three }}</td>
+      <td>{{ four }}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+</div>
