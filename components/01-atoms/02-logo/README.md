@@ -1,0 +1,3 @@
+# Notes for Logo
+
+Hier sind einige Notizen für das Logo...

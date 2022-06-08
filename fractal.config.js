@@ -16,6 +16,10 @@ fractal.components.set('path', __dirname + '/components');
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/docs');
 
+/* Specify a directory of static assets */
+fractal.web.set('static.path', __dirname + '/assets');
+fractal.web.set('static.mount', 'assets');
+
 /* Tell Fractal where to put the static build */
 fractal.web.set('builder.dest', __dirname + '/web');
 

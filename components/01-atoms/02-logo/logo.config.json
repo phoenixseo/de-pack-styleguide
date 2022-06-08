@@ -1,0 +1,80 @@
+{
+  "title": "Logo mit Farbdefinitionen",
+  "label": "Logo",
+  "default": "logo",
+  "status": "ready",
+  "context": {},
+  "variants": [
+    {
+      "name": "logo",
+      "label": "Logo",
+      "context": {}
+    },
+    {
+      "name": "depackcolors",
+      "label": "Logo + DE-PACK Farben",
+      "context": {
+        "primary": [
+          {
+            "label": "DE-PACK Red",
+            "class": "???",
+            "value": "#c4182a"
+          },
+          {
+            "label": "Dark Dark",
+            "class": "???",
+            "value": "#262626"
+          },
+          {
+            "label": "Lighter Dark",
+            "class": "???",
+            "value": "#4e4e4e"
+          },
+          {
+            "label": "White",
+            "class": "white",
+            "value": "#ffffff"
+          },
+          {
+            "label": "Black",
+            "class": "black",
+            "value": "#000000"
+          }
+        ]
+      }
+    },
+    {
+      "name": "verpackungencolors",
+      "label": "Logo + Verpackungen Colors",
+      "context": {
+        "primary": [
+          {
+            "label": "Lava-Red",
+            "class": "lava-red-500",
+            "value": "#c31924"
+          },
+          {
+            "label": "Honey-Yellow",
+            "class": "honey-yellow-500",
+            "value": "#f6ae2d"
+          },
+          {
+            "label": "Queen-Blue",
+            "class": "queen-blue-500",
+            "value": "#33658a"
+          },
+          {
+            "label": "DarkSky-Blue",
+            "class": "darksky-blue-500",
+            "value": "#86bbd8"
+          },
+          {
+            "label": "Charcoal",
+            "class": "charcoal-500",
+            "value": "#2f4858"
+          }
+        ]
+      }
+    }
+  ]
+}
