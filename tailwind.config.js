@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./stories/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat"]
+      }
+    },
   },
   plugins: [],
 }

@@ -8,9 +8,10 @@
 @import "tailwindcss/components";
 /*@import "./css-components-loader.css";*/
 
-a {
-  @apply text-lime-500;
-}
-
 @import "tailwindcss/utilities";
 /*@import "css-utilities-loader.css";*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}

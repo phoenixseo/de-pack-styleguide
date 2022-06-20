@@ -1,8 +1,22 @@
-<div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
-  <h2>Vergleich der Varianten</h2>
-  <div class="flex gap-4">
-    <p class="leading-normal"><strong>leading-normal</strong>: {{ paraText }}</p>
-    <p class="leading-relaxed"><strong>leading-relaxed</strong>: {{ paraText }}</p>
-    <p class="leading-loose"><strong>leading-loose</strong>: {{ paraText }}</p>
+<h1>Zeilendurchschuss</h1>
+
+<div class="flex gap-4">
+  <div class="leading-normal">
+    <h2>leading-normal</h2>
+    {{#each entries}}
+    <p>{{ text }}</p>
+    {{/each}}
+  </div>
+  <div class="leading-relaxed">
+    <h2>leading-normal</h2>
+    {{#each entries}}
+    <p>{{ text }}</p>
+    {{/each}}
+  </div>
+  <div class="leading-loose">
+    <h2>leading-normal</h2>
+    {{#each entries}}
+    <p>{{ text }}</p>
+    {{/each}}
   </div>
 </div>

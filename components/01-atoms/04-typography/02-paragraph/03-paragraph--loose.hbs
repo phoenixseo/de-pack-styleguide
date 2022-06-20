@@ -1,7 +1,5 @@
-<div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
-<p class="leading-loose">{{ paraText }}</p>
-<p class="leading-loose">{{ paraText }}</p>
-<p class="leading-loose">{{ paraText }}</p>
-<p class="leading-loose">{{ paraText }}</p>
-<p class="leading-loose">{{ paraText }}</p>
+<div class="leading-loose">
+  {{#each entries}}
+  <p>{{ text }}</p>
+  {{/each}}
 </div>
