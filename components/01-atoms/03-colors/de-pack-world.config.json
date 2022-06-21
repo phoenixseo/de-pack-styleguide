@@ -1,0 +1,59 @@
+{
+  "title": "DE-PACK Color World",
+  "label": "Color World",
+  "status": "wip",
+  "context": {
+    "main": [
+      {
+        "label": "Lava",
+        "hex": "#c31924",
+        "rgb": "195, 25, 36",
+        "cmyk": "0, 87, 82, 24"
+      },
+      {
+        "label": "Isabelline",
+        "hex": "#efefea",
+        "rgb": "239, 239, 234",
+        "cmyk": "0, 0, 2, 6"
+      },
+      {
+        "label": "Ghost White",
+        "hex": "#f6f7fc",
+        "rgb": "246, 247, 252",
+        "cmyk": "2, 2, 0, 1"
+      },
+      {
+        "label": "Onyx",
+        "hex": "#3d3d3d",
+        "rgb": "61, 61, 61",
+        "cmyk": "0, 0, 0, 76"
+      },
+      {
+        "label": "Android Green",
+        "hex": "#95c03d",
+        "rgb": "149, 192, 61",
+        "cmyk": "22, 0, 68, 25"
+      }
+    ],
+    "sub": [
+      {
+        "label": "Honey Yellow",
+        "hex": "#f6ae2d",
+        "rgb": "246, 174, 45",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Queen Blue",
+        "hex": "#33658a",
+        "rgb": "51, 101, 138",
+        "cmyk": "63, 27, 0, 46"
+      },
+      {
+        "label": "Darksky Blue",
+        "hex": "#86bbd8",
+        "rgb": "134, 187, 216",
+        "cmyk": "38, 13, 0, 15"
+      }
+    ]
+  }
+}

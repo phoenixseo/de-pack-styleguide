@@ -1,9 +1,35 @@
-lava: #c31924
+<h1>DE-PACK Color World</h1>
 
-isabelline: #efefea
+<h2>Haupt-Farben</h2>
 
-ghost white: #f6f7fc
+<div class="flex gap-8">
+  {{#each main}}
+  <div class="flex flex-col">
+    <div class="w-48 h-48" style="background-color: {{ hex }};">
+    </div>
+    <div class="text-sm font-medium bg-stone-100 text-center p-2">
+      <div class="font-bold">{{ label }}</div>
+      <div class="select-all font-mono">{{ hex }}</div>
+      <div class="font-mono">RGB: <span class="select-all">{{ rgb }}</span></div>
+      <div class="font-mono">CMYK: <span class="select-all">{{ cmyk }}</span></div>
+    </div>
+  </div>
+  {{/each}}
+</div>
 
-onyx: #3d3d3d
+<h2>Weitere Farben</h2>
 
-android green: #95c03d
+<div class="flex gap-8">
+  {{#each sub}}
+  <div class="flex flex-col">
+    <div class="w-48 h-48" style="background-color: {{ hex }};">
+    </div>
+    <div class="text-sm font-medium bg-stone-100 text-center p-2">
+      <div class="font-bold">{{ label }}</div>
+      <div class="select-all font-mono">{{ hex }}</div>
+      <div class="font-mono">RGB: <span class="select-all">{{ rgb }}</span></div>
+      <div class="font-mono">CMYK: <span class="select-all">{{ cmyk }}</span></div>
+    </div>
+  </div>
+  {{/each}}
+</div>

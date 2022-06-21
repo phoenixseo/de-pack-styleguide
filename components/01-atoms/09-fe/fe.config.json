@@ -1,0 +1,73 @@
+{
+  "title": "Form-Elements",
+  "label": "Form-Elements",
+  "default": "text",
+  "status": "ready",
+  "variants": [
+    {
+      "name": "text",
+      "label": "Text",
+      "context": {}
+    },
+    {
+      "name": "select",
+      "label": "Select",
+      "context": {
+        "options": [
+          {
+            "entry": "Erste Option",
+            "value": "eins"
+          },
+          {
+            "entry": "Zweite Option",
+            "value": "zwei"
+          },
+          {
+            "entry": "Dritte Option",
+            "value": "drei"
+          },
+          {
+            "entry": "Vierte Option",
+            "value": "vier"
+          },
+          {
+            "entry": "Fünfte Option",
+            "value": "fünf"
+          }
+        ]
+      }
+    },
+    {
+      "name": "select-multiple",
+      "label": "Select (multiple)",
+      "context": {
+        "options": [
+          {
+            "entry": "Erste Option",
+            "value": "eins"
+          },
+          {
+            "entry": "Zweite Option",
+            "value": "zwei"
+          },
+          {
+            "entry": "Dritte Option",
+            "value": "drei"
+          },
+          {
+            "entry": "Vierte Option",
+            "value": "vier"
+          },
+          {
+            "entry": "Fünfte Option",
+            "value": "fünf"
+          }
+        ]
+      }
+    },
+    {
+      "name": "time",
+      "label": "Time"
+    }
+  ]
+}
