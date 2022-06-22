@@ -9,16 +9,16 @@ const tddata = [];
 
 for( var i = 0; i < cols; i++ ) {
   thdata.push({
-    thcontent: faker.company.companyName()
+    thcontent: faker.word.noun()
   });
 }
 
 for( var i = 0; i < rows; i++ ) {
   tddata.push({
-    one: faker.finance.transactionDescription(),
-    two: faker.finance.transactionDescription(),
-    three: faker.finance.transactionDescription(),
-    four: faker.finance.transactionDescription()
+    one: faker.word.noun(),
+    two: faker.word.verb(),
+    three: faker.word.adjective(),
+    four: faker.word.adverb()
   });
 }
 

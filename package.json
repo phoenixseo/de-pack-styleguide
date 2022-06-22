@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:generate": "npx tailwindcss -i ./css-input/app.css -o ./assets/css/app.css",
+    "tailwind:watch": "npx tailwindcss -i ./css-input/app.css -o ./assets/css/app.css --watch",
     "fractal:build": "fractal build",
-    "fractal:start": "fractal start --sync"
+    "fractal:start": "fractal start --sync",
+    "develop": "npm run tailwind:watch & npm run fractal:start",
+    "production": "npm run tailwind:generate && npm run fractal:build"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +20,11 @@
     "mono-fractal": "^1.1.2"
   },
   "devDependencies": {
-    "@faker-js/faker": "^7.1.0"
+    "@faker-js/faker": "^7.1.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "tailwindcss": "^3.1.4"
   }
 }

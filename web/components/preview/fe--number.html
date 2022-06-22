@@ -4,14 +4,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="../../assets/css/app.css">
     <title>Preview Layout</title>
 </head>
 <body>
   <div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
 
-    <input class="form-input" type="number" id="numberinput" name="" value="" placeholder="123456">
+    <div class="mt-2 mb-2">
+  <label for="numberinput">Numerische Eingabe:</label>
+  <input class="form-input block w-full" type="number" id="numberinput" name="" value="" placeholder="123456">
+</div>
 
 
   </div>

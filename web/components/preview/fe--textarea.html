@@ -4,15 +4,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="../../assets/css/app.css">
     <title>Preview Layout</title>
 </head>
 <body>
   <div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
 
-    <textarea id="textareainput" rows="10" cols="50" placeholder="type some text ...">
-</textarea>
+    <div class="mt-2 mb-2">
+  <label for="textareainput">Freitext-Eingabe:</label>
+  <textarea class="form-textarea block w-full" id="textareainput" rows="10" cols="50" placeholder="type some text ..."></textarea>
+</div>
 
 
   </div>

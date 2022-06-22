@@ -4,21 +4,37 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="../../assets/css/app.css">
     <title>Preview Layout</title>
 </head>
 <body>
   <div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
 
-    <label for="radio1">One</label>
-<input class="form-radio" type="radio" id="radio1" name="myradiogroup" value="one">
+    <fieldset class="block mt-2 mb-2">
+  <legend>Radio-Buttons</legend>
 
-<label for="radio2">Two</label>
-<input class="form-radio" type="radio" id="radio2" name="myradiogroup" value="two">
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-radio" type="radio" id="radio1" name="myradiogroup" value="one">
+      <label class="ml-2" for="radio1">One</label>
+    </div>
+  </div>
 
-<label for="radio3">Three</label>
-<input class="form-radio" type="radio" id="radio3" name="myradiogroup" value="three">
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-radio" type="radio" id="radio2" name="myradiogroup" value="two">
+      <label class="ml-2" for="radio2">Two</label>
+    </div>
+  </div>
+
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-radio" type="radio" id="radio3" name="myradiogroup" value="three">
+      <label class="ml-2" for="radio3">Three</label>
+    </div>
+  </div>
+
+</fieldset>
 
 
   </div>

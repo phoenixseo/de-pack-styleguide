@@ -11,7 +11,40 @@
 @import "tailwindcss/utilities";
 /*@import "css-utilities-loader.css";*/
 
+
 @font-face {
   font-family: "Montserrat";
-  src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  src: local('Montserrat'), url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('ttf');
+}
+
+@layer base {
+  html {
+    font-family: Montserrat;
+  }
+}
+
+/* definition lists, dl-dt-dd */
+dl {
+  @apply sm:grid sm:grid-cols-2 border-t border-gray-200;
+}
+dt {
+  @apply font-bold border-b py-4;
+}
+dd {
+  @apply border-b py-4;
+}
+
+/* the button definitions */
+button,
+.btn {
+  @apply inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-bold rounded-md bg-white hover:bg-ghostwhite focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lava no-underline;
+}
+.btn-sm {
+  @apply px-3 py-2 text-sm;
+}
+.lava {
+  @apply bg-gradient-to-b from-lava to-lava-dark text-white hover:bg-gradient-to-b hover:from-lava-light hover:to-lava focus:ring-lava-dark;
+}
+.honeyyellow {
+  @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-white hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
 }

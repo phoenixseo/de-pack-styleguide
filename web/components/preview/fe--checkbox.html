@@ -4,21 +4,37 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="../../assets/css/app.css">
     <title>Preview Layout</title>
 </head>
 <body>
   <div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
 
-    <label for="checkbox1">One</label>
-<input class="form-checkbox" type="checkbox" id="checkbox1" name="" value="one">
+    <fieldset class="block mt-2 mb-2">
+  <legend>Radio-Buttons</legend>
 
-<label for="checkbox2">Two</label>
-<input class="form-checkbox" type="checkbox" id="checkbox2" name="" value="two">
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-checkbox" type="checkbox" id="checkbox1" name="" value="one">
+      <label class="ml-2" for="checkbox1">One</label>
+    </div>
+  </div>
 
-<label for="checkbox3">Three</label>
-<input class="form-checkbox" type="checkbox" id="checkbox3" name="" value="three">
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-checkbox" type="checkbox" id="checkbox2" name="" value="two">
+      <label class="ml-2" for="checkbox2">Two</label>
+    </div>
+  </div>
+
+  <div>
+    <div class="inline-flex items-center">
+      <input class="form-checkbox" type="checkbox" id="checkbox3" name="" value="three">
+      <label class="ml-2" for="checkbox3">Three</label>
+    </div>
+  </div>
+
+</fieldset>
 
 
   </div>
