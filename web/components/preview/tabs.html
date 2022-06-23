@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Preview Layout</title>
+</head>
+<body>
+
+    <div class="w-full bg-onyx">
+
+  <div
+    x-data="{
+      selectedId: null,
+      init() {
+        // Set the first available tab on the page on page load.
+        this.$nextTick(() => this.select(this.$id('tab', 1)))
+      },
+      select(id) {
+        this.selectedId = id
+      },
+      isSelected(id) {
+        return this.selectedId === id
+      },
+      whichChild(el, parent) {
+        return Array.from(parent.children).indexOf(el) + 1
+      }
+    }"
+    x-id="['tab']"
+    class="container mx-auto"
+  >
+    <!-- Tab List -->
+    <div
+      x-ref="tablist"
+      @keydown.right.prevent.stop="$focus.wrap().next()"
+      @keydown.home.prevent.stop="$focus.first()"
+      @keydown.page-up.prevent.stop="$focus.first()"
+      @keydown.left.prevent.stop="$focus.wrap().prev()"
+      @keydown.end.prevent.stop="$focus.last()"
+      @keydown.page-down.prevent.stop="$focus.last()"
+      role="tablist"
+      class="flex justiy-start flex-col sm:flex-row gap-2 sm:gap-4"
+    >
+      <!-- Tab -->
+      <div>
+        <button
+          :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+          @click="select($el.id)"
+          @mousedown.prevent
+          @focus="select($el.id)"
+          type="button"
+          :tabindex="isSelected($el.id) ? 0 : -1"
+          :aria-selected="isSelected($el.id)"
+          :class="isSelected($el.id) ? 'border-gray-200 bg-white' : 'border-transparent'"
+          class="tabs-tab"
+          role="tab"
+        >BIO Produkt
+        </button>
+      </div>
+
+      <div>
+        <button
+          :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+          @click="select($el.id)"
+          @mousedown.prevent
+          @focus="select($el.id)"
+          type="button"
+          :tabindex="isSelected($el.id) ? 0 : -1"
+          :aria-selected="isSelected($el.id)"
+          :class="isSelected($el.id) ? 'text-lava' : 'border-transparent'"
+          class="tabs-tab"
+          role="tab"
+        >Qualitätsprodukt
+        </button>
+      </div>
+
+      <div>
+        <button
+          :id="$id('tab', whichChild($el.parentElement, $refs.tablist))"
+          @click="select($el.id)"
+          @mousedown.prevent
+          @focus="select($el.id)"
+          type="button"
+          :tabindex="isSelected($el.id) ? 0 : -1"
+          :aria-selected="isSelected($el.id)"
+          :class="isSelected($el.id) ? 'text-lava' : 'border-transparent'"
+          class="tabs-tab"
+          role="tab"
+        >TV-Spot #mogelpackung
+        </button>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div role="tabpanels" class="bg-ghostwhite border border-isabelline">
+        <!-- Panel -->
+      <section
+        x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+        :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+        role="tabpanel"
+        class="flex flex-col lg:flex-row p-4 gap-4"
+      >
+        <img src="https://de-pack.de/sites/default/files/t1-reinpapier-z.jpg">
+        <div>
+          <h3 class="font-bold text-xl">Zersetzungsprozess von Papierspritzguss-Verpackungen</h3>
+          <p class="mt-2 text-gray-500">Das Video zeigt den Zersetzungsprozess eines reinpapier® Verpackungstrays unter aeroben Bedingungen. Innerhalb von 45 Tagen hat sich die Verpackung, ohne schädliche Rückstände zu hinterlassen, vollständig abgebaut.</p>
+          <a class="btn lava my-4" href="#">Something focusable</a>
+        </div>
+      </section>
+
+      <section
+        x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+        :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+        role="tabpanel"
+        class="flex flex-col lg:flex-row p-4 gap-4"
+      >
+        <img src="https://de-pack.de/sites/default/files/t2-reinpapier-qualitaet.jpg">
+        <div>
+          <h3 class="font-bold text-xl">Qualitätsverpackung aus natürlichen Zutaten</h3>
+          <p class="mt-2 text-gray-500">Wir stellen uns unserer Verantwortung, denn aktiver Umweltschutz liegt in unser aller Händen. Wir müssen dafür Sorge tragen, dass wir mit natürlichen Ressourcen achtsam umgehen und künftige Generationen einen lebenswerten Planeten vorfinden. Deshalb bieten Ihnen mit der Marke reinpapier® pure Nachhaltigkeit.</p>
+          <a class="btn honeyyellow my-4" href="#">Zum Video</a>
+        </div>
+      </section>
+
+      <section
+        x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
+        :aria-labelledby="$id('tab', whichChild($el, $el.parentElement))"
+        role="tabpanel"
+        class="flex flex-col lg:flex-row p-4 gap-4"
+      >
+        <img src="https://de-pack.de/sites/default/files/t3-keine-mogelpackung.jpg">
+        <div>
+          <h3 class="font-bold text-xl">#mogelpackung - DE-PACK TV-Spot</h3>
+          <p class="mt-2 text-gray-500">Sie haben unseren smarten TV-Werbespot zur Kampagne #mogelpackung noch nicht gesehen? Einfach hier anklicken, dann können Sie den beliebten Werbespot anschauen.</p>
+          <a class="btn honeyyellow my-4" href="#">#mogelpackung</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+

@@ -38,8 +38,16 @@ module.exports = {
           light: '#f8c462',
           dark: '#f5a614'
         },
-        queenblue: '#33658a',
-        darkskyblue: '#86bbd8'
+        queenblue: {
+          DEFAULT: '#33658a',
+          light: '#4282b3',
+          dark: '#2c5777'
+        },
+        darkskyblue: {
+          DEFAULT: '#86bbd8',
+          light: '#b2d4e6',
+          dark: '#74b1d2'
+        }
       },
     },
   },

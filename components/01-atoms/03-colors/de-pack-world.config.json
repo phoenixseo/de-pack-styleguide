@@ -6,30 +6,35 @@
     "main": [
       {
         "label": "Lava",
+        "class": "lava",
         "hex": "#c31924",
         "rgb": "195, 25, 36",
         "cmyk": "0, 87, 82, 24"
       },
       {
         "label": "Isabelline",
+        "class": "isabelline",
         "hex": "#efefea",
         "rgb": "239, 239, 234",
         "cmyk": "0, 0, 2, 6"
       },
       {
         "label": "Ghost White",
+        "class": "ghostwhite",
         "hex": "#f6f7fc",
         "rgb": "246, 247, 252",
         "cmyk": "2, 2, 0, 1"
       },
       {
         "label": "Onyx",
+        "class": "onyx",
         "hex": "#3d3d3d",
         "rgb": "61, 61, 61",
         "cmyk": "0, 0, 0, 76"
       },
       {
         "label": "Android Green",
+        "class": "androidgreen",
         "hex": "#95c03d",
         "rgb": "149, 192, 61",
         "cmyk": "22, 0, 68, 25"
@@ -38,21 +43,82 @@
     "sub": [
       {
         "label": "Honey Yellow",
+        "class": "honeyyellow",
         "hex": "#f6ae2d",
         "rgb": "246, 174, 45",
         "cmyk": "0, 29, 82, 4"
       },
       {
         "label": "Queen Blue",
+        "class": "queenblue",
         "hex": "#33658a",
         "rgb": "51, 101, 138",
         "cmyk": "63, 27, 0, 46"
       },
       {
         "label": "Darksky Blue",
+        "class": "darkskyblue",
         "hex": "#86bbd8",
         "rgb": "134, 187, 216",
         "cmyk": "38, 13, 0, 15"
+      }
+    ],
+    "shades": [
+      {
+        "label": "Lava (light)",
+        "class": "lava-light",
+        "hex": "#e32633",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Lava (dark)",
+        "class": "lava-dark",
+        "hex": "#a2151f",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Honey Yellow (light)",
+        "class": "honeyyellow-light",
+        "hex": "#f8c462",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Honey Yellow (dark)",
+        "class": "honeyyellow-dark",
+        "hex": "#f5a614",
+        "rgb": "246, 174, 45",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Queen Blue (light)",
+        "class": "queenblue-light",
+        "hex": "#4282b3",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Queen Blue (dark)",
+        "class": "queenblue-dark",
+        "hex": "#2c5777",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Dark Sky Blue (light)",
+        "class": "darkskyblue-light",
+        "hex": "#b2d4e6",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
+      },
+      {
+        "label": "Dark Sky Blue (dark)",
+        "class": "darkskyblue-dark",
+        "hex": "#74b1d2",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 29, 82, 4"
       }
     ]
   }

@@ -48,3 +48,11 @@ button,
 .honeyyellow {
   @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-white hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
 }
+.androidgreen {
+  @apply bg-androidgreen;
+}
+
+/* tabs + tab */
+.tabs-tab {
+  @apply w-full sm:w-fit border-none bg-transparent text-white hover:text-onyx rounded-none;
+}
