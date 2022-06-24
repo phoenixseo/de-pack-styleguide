@@ -49,7 +49,7 @@ button,
   @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-white hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
 }
 .androidgreen {
-  @apply bg-androidgreen;
+  @apply bg-gradient-to-b from-androidgreen to-androidgreen-dark text-white hover:bg-gradient-to-b hover:from-androidgreen-light hover:to-androidgreen focus:ring-androidgreen-dark;
 }
 
 /* tabs + tab */

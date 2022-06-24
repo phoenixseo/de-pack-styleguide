@@ -1,0 +1,20 @@
+<table class="border-separate">
+  <caption>Eine Test-Tabelle mit irgendwelchen Daten</caption>
+  <thead>
+    <tr>
+      {% for head in tablehead %}
+      <th>{{ head.thcontent }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for d in data %}
+    <tr>
+      <td>{{ d.one }}</td>
+      <td>{{ d.two }}</td>
+      <td>{{ d.three }}</td>
+      <td>{{ d.four }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

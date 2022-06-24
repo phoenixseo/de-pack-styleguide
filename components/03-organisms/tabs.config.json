@@ -1,0 +1,8 @@
+{
+  "title": "Tabs",
+  "label": "Tabs",
+  "default": "tabs",
+  "status": "ready",
+  "preview": "@preview-without-prose",
+  "context": {}
+}

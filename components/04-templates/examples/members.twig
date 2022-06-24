@@ -1,0 +1,14 @@
+<h1>Members</h1>
+
+<ul>
+  {% for m in members %}
+  <li>
+    <img src="{{ m.avatar }}" class="rounded-full" width="64" height="64">
+    <p>
+      <strong>{{ m.name }}</strong>
+      <br>{{ m.email }}
+      <br>{{ m.address }}
+    </p>
+  </li>
+  {% endfor %}
+<ul>

@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.1" type="text/css">
 
 
-<title>Startseite Depack | DE-PACK Component Library</title>
+<title>Startseite DE-PACK | DE-PACK Component Library</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/startseite-depack.html" title="Preview">
-            Startseite Depack
+            Startseite DE-PACK
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -89,7 +89,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #29cc29; border-color: #29cc29;">Ready</label>
+<label class="Status-label" style="background-color: #ff9233; border-color: #ff9233;">WIP</label>
 
 </div>
 
@@ -201,21 +201,21 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;w-full bg-onyx&quot;</span>&gt;</span>
 
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-data</span>=<span class="hljs-string">&quot;{
-          selectedId: null,
-          init() {
-            // Set the first available tab on the page on page load.
-            this.$nextTick(() =&gt; this.select(this.$id(&#x27;tab&#x27;, 1)))
-          },
-          select(id) {
-            this.selectedId = id
-          },
-          isSelected(id) {
-            return this.selectedId === id
-          },
-          whichChild(el, parent) {
-            return Array.from(parent.children).indexOf(el) + 1
-          }
-        }&quot;</span> <span class="hljs-attr">x-id</span>=<span class="hljs-string">&quot;[&#x27;tab&#x27;]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container mx-auto&quot;</span>&gt;</span>
+      selectedId: null,
+      init() {
+        // Set the first available tab on the page on page load.
+        this.$nextTick(() =&gt; this.select(this.$id(&#x27;tab&#x27;, 1)))
+      },
+      select(id) {
+        this.selectedId = id
+      },
+      isSelected(id) {
+        return this.selectedId === id
+      },
+      whichChild(el, parent) {
+        return Array.from(parent.children).indexOf(el) + 1
+      }
+    }&quot;</span> <span class="hljs-attr">x-id</span>=<span class="hljs-string">&quot;[&#x27;tab&#x27;]&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container mx-auto&quot;</span>&gt;</span>
                 <span class="hljs-comment">&lt;!-- Tab List --&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">x-ref</span>=<span class="hljs-string">&quot;tablist&quot;</span> @<span class="hljs-attr">keydown.right.prevent.stop</span>=<span class="hljs-string">&quot;$focus.wrap().next()&quot;</span> @<span class="hljs-attr">keydown.home.prevent.stop</span>=<span class="hljs-string">&quot;$focus.first()&quot;</span> @<span class="hljs-attr">keydown.page-up.prevent.stop</span>=<span class="hljs-string">&quot;$focus.first()&quot;</span> @<span class="hljs-attr">keydown.left.prevent.stop</span>=<span class="hljs-string">&quot;$focus.wrap().prev()&quot;</span> @<span class="hljs-attr">keydown.end.prevent.stop</span>=<span class="hljs-string">&quot;$focus.last()&quot;</span> @<span class="hljs-attr">keydown.page-down.prevent.stop</span>=<span class="hljs-string">&quot;$focus.last()&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex justiy-start flex-col sm:flex-row gap-2 sm:gap-4&quot;</span>&gt;</span>
                     <span class="hljs-comment">&lt;!-- Tab --&gt;</span>
@@ -293,18 +293,14 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
-    {% if page.content_below %}
-
-    {% endif %}
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{# /.layout-container #}</pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
 
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4dd1b8cee866d90187b60d0d6516f303-panel-view">
-    <code class="Code Code--lang-handlebars hljs">
+    <code class="Code Code--lang-twig hljs">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-container w-full&quot;</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;visitor_message&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;honeyyellow&quot;</span>&gt;</span>
@@ -324,7 +320,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;hero&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bg-onyx&quot;</span>&gt;</span>
-    </span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">tabs</span>}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">include</span></span> &#x27;<a href="./tabs.html">@tabs</a>&#x27; %}</span><span class="xml">
   <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;highlighted&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
@@ -350,17 +346,17 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
 
-  {% if page.content_below %}
-    </span><span class="hljs-template-variable">{{ <span class="hljs-name">page.content_below</span> }}</span><span class="xml">
-  {% endif %}
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> page.content_below %}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{ page.content_below }}</span><span class="xml">
+  </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml">
 
-  </span><span class="hljs-template-variable">{{ <span class="hljs-name">page.footer</span> }}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{ page.footer }}</span><span class="xml">
 
-  </span><span class="hljs-template-variable">{{ <span class="hljs-name">page.footer_1</span> }}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{ page.footer_1 }}</span><span class="xml">
 
-  </span><span class="hljs-template-variable">{{ <span class="hljs-name">page.footer_2</span> }}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{ page.footer_2 }}</span><span class="xml">
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>{# /.layout-container #}</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><span class="hljs-comment">{# /.layout-container #}</span></pre>
     </code>
 </div>
 
@@ -414,7 +410,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/05-pages/startseite-depack.hbs</span>
+            <span class="Meta-value">components/05-pages/startseite-depack.twig</span>
         </li>
         
         <li class="Meta-item">
@@ -625,128 +621,6 @@
 
             </a>
         </li>
-        
-    
-        
-        
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-transitions">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-transitions-items">
-                    Transitions
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-transitions-items">
-                
-                
-                
-                
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./depacktrans.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="depacktrans"
-                data-handle="depacktrans"
-            >
-                <span>Depacktrans</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./reinpapier.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="reinpapier"
-                data-handle="reinpapier"
-            >
-                <span>reinpapier.de</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./verpackungen.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="verpackungen"
-                data-handle="verpackungen"
-            >
-                <span>verpackungen.de</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-                </ul>
-            </li>
-            
         
     
 
@@ -1999,7 +1873,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2033,7 +1907,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2067,7 +1941,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2101,7 +1975,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2135,7 +2009,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2169,7 +2043,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2203,7 +2077,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2377,74 +2251,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./members.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="members"
-                data-handle="members"
-            >
-                <span>Members</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./users.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="users"
-                data-handle="users"
-            >
-                <span>Users</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
 
                 </ul>
             </li>
@@ -2547,7 +2353,7 @@
                 data-test="hero1"
                 data-handle="hero1"
             >
-                <span>Hero 1</span>
+                <span>Hero #1</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2555,41 +2361,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./people.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="people"
-                data-handle="people"
-            >
-                <span>People</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff3333;" title="Prototype"></span>
 
 
 </div>
@@ -2689,6 +2461,128 @@
         </li>
         
     
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-examples">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-examples-items">
+                    Examples
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-examples-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./members.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="members"
+                data-handle="members"
+            >
+                <span>Members</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./people.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="people"
+                data-handle="people"
+            >
+                <span>People</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./users.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="users"
+                data-handle="users"
+            >
+                <span>Users</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
 
                 </ul>
             </li>
@@ -2757,7 +2651,7 @@
                 data-test="startseite-depack"
                 data-handle="startseite-depack"
             >
-                <span>Startseite Depack</span>
+                <span>Startseite</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2765,7 +2659,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29cc29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #ff9233;" title="WIP"></span>
 
 
 </div>
@@ -2881,8 +2775,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-23T19:01:15.478Z">
-                                6/23/2022
+                            <time datetime="2022-06-24T19:20:09.243Z">
+                                6/24/2022
                             </time>
                         
                     </dd>

@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./components/**/*.{hbs,js}",
+    "./components/**/*.{twig,js}",
     "./css-input/**/*.css"
   ],
   theme: {
@@ -32,7 +32,11 @@ module.exports = {
         isabelline: '#efefea',
         ghostwhite: '#f6f7fc',
         onyx: '#3d3d3d',
-        androidgreen: '#95c03d',
+        androidgreen: {
+          DEFAULT: '#95c03d',
+          light: '#abce64',
+          dark: '#84ab36'
+        },
         honeyyellow: {
           DEFAULT: '#f6ae2d',
           light: '#f8c462',

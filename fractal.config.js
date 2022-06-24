@@ -4,6 +4,12 @@
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
 
+/* require the twig adapter */
+const twigAdapter = require('@frctl/twig')();
+fractal.components.engine(twigAdapter);
+fractal.components.set('ext', '.twig');
+/*fractal.docs.engine(twigAdapter);*/
+
 /* set the theme */
 const webUITheme = require('@frctl/mandelbrot');
 
@@ -12,6 +18,10 @@ fractal.set('project.title', 'DE-PACK Component Library');
 
 /* Tell Fractal where the components will live */
 fractal.components.set('path', __dirname + '/components');
+
+/* Set the preview Template */
+fractal.components.set('default.preview', '@preview');
+
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/docs');

@@ -1,0 +1,10 @@
+<div class="mt-2 mb-2">
+  <label for="select">Select-Option:</label>
+  <select class="form-select block w-full" type="select" id="select">
+    <optgroup label="Treffe Deine Wahl">
+      {% for o in options %}
+      <option value="{{ o.value }}">{{ o.entry }}</option>
+      {% endfor %}
+    </optgroup>
+  </select>
+</div>

@@ -1,0 +1,56 @@
+<div class="layout-container w-full">
+
+  <section name="visitor_message" class="honeyyellow">
+    Important message to Readers
+  </section>
+
+  <header role="banner" class="relative md:sticky top-0 z-50 bg-brand1 shadow-lg">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row gap-x-7 items-center">
+        Page Header: Branding (Logo, Name, Slogan)
+        Primary Menu
+        <div class="hidden md:block">
+            Secondary Menu
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section name="hero" class="bg-onyx">
+    {% include '@tabs' %}
+  </section>
+
+  <section name="highlighted" class="">
+    Highlighted
+  </section>
+
+  <section name="breadcrumb">
+    breadcrumb
+  </section>
+
+  <section name="content_above">
+    content above
+  </section>
+
+  <main role="main" id="main-content">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content container mx-auto px-4">
+      page.messages
+      page.page_title
+      page.taskbar
+
+      page.content
+    </div>
+  </main>
+
+  {% if page.content_below %}
+    {{ page.content_below }}
+  {% endif %}
+
+  {{ page.footer }}
+
+  {{ page.footer_1 }}
+
+  {{ page.footer_2 }}
+
+</div>{# /.layout-container #}

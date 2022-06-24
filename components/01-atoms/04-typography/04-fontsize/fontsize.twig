@@ -1,0 +1,22 @@
+<h1>Font Size</h1>
+
+<table class="table-auto w-full overflow-hidden">
+<thead>
+  <tr>
+    <th>class</th>
+    <th>rem</th>
+    <th>px</th>
+    <th>sample</th>
+  </tr>
+</thead>
+<tbody>
+  {% for entry in sizes %}
+  <tr>
+    <td>{{ entry.class }}</td>
+    <td>{{ entry.rem }}</td>
+    <td>{{ entry.px }}</td>
+    <td class="{{ entry.class }}">The quick brown fox jumps over the lazy dog</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
