@@ -1,0 +1,33 @@
+<h2>Lava</h2>
+<p>Logo-Farbe als Richtwert für alle anderen Farben, Schmuckfarben und Schattierungen.</p>
+
+<div class="flex flex-row gap-1">
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ lava.light.hex }}">
+    <div>Name: {{ lava.light.label }}</div>
+    <div>Class: {{ lava.light.class }}</div>
+    <div>Hex: {{ lava.light.hex }}</div>
+    <div>RGB: {{ lava.light.rgb }}</div>
+    <div>CMYK: {{ lava.light.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-64 h-64 text-white text-xs font-mono font-bold" style="background-color: {{ lava.default.hex }}">
+    <div>Name: {{ lava.default.label }}</div>
+    <div>Class: {{ lava.default.class }}</div>
+    <div>Hex: {{ lava.default.hex }}</div>
+    <div>RGB: {{ lava.default.rgb }}</div>
+    <div>CMYK: {{ lava.default.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ lava.dark.hex }}">
+    <div>Name: {{ lava.dark.label }}</div>
+    <div>Class: {{ lava.dark.class }}</div>
+    <div>Hex: {{ lava.dark.hex }}</div>
+    <div>RGB: {{ lava.dark.rgb }}</div>
+    <div>CMYK: {{ lava.dark.cmyk }}</div>
+  </div>
+</div>
+
+<div class="{{ lava.default.class }} p-2 mt-2 w-full h-48">
+  {{ lava.default.class }} als Klasse angewendet.
+  Verlauf ändert sich bei Mauseover.
+</div>

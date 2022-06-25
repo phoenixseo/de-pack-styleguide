@@ -31,7 +31,11 @@ module.exports = {
         },
         isabelline: '#efefea',
         ghostwhite: '#f6f7fc',
-        onyx: '#3d3d3d',
+        onyx: {
+          DEFAULT: '#3d3d3d',
+          light: '#525252',
+          dark: '#292929'
+        },
         androidgreen: {
           DEFAULT: '#95c03d',
           light: '#abce64',

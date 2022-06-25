@@ -46,11 +46,15 @@ button,
   @apply bg-gradient-to-b from-lava to-lava-dark text-white hover:bg-gradient-to-b hover:from-lava-light hover:to-lava focus:ring-lava-dark;
 }
 .honeyyellow {
-  @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-white hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
+  @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-black hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
 }
 .androidgreen {
-  @apply bg-gradient-to-b from-androidgreen to-androidgreen-dark text-white hover:bg-gradient-to-b hover:from-androidgreen-light hover:to-androidgreen focus:ring-androidgreen-dark;
+  @apply bg-gradient-to-b from-androidgreen to-androidgreen-dark text-black hover:bg-gradient-to-b hover:from-androidgreen-light hover:to-androidgreen focus:ring-androidgreen-dark;
 }
+.onyx {
+  @apply bg-gradient-to-b from-onyx to-onyx-dark text-white hover:bg-gradient-to-b hover:from-onyx-light hover:to-onyx focus:ring-onyx-dark;
+}
+
 
 /* tabs + tab */
 .tabs-tab {

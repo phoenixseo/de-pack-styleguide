@@ -1,0 +1,33 @@
+<h2>Android Green</h2>
+<p>Hauptsächliche Anwendung bei reinpapier und Umwelt-Plaketten.</p>
+
+<div class="flex flex-row gap-1">
+  <div class="p-2 w-48 h-48 text-black text-xs font-mono" style="background-color: {{ androidgreen.light.hex }}">
+    <div>Name: {{ androidgreen.light.label }}</div>
+    <div>Class: {{ androidgreen.light.class }}</div>
+    <div>Hex: {{ androidgreen.light.hex }}</div>
+    <div>RGB: {{ androidgreen.light.rgb }}</div>
+    <div>CMYK: {{ androidgreen.light.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-64 h-64 text-black text-xs font-mono font-bold" style="background-color: {{ androidgreen.default.hex }}">
+    <div>Name: {{ androidgreen.default.label }}</div>
+    <div>Class: {{ androidgreen.default.class }}</div>
+    <div>Hex: {{ androidgreen.default.hex }}</div>
+    <div>RGB: {{ androidgreen.default.rgb }}</div>
+    <div>CMYK: {{ androidgreen.default.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-48 h-48 text-black text-xs font-mono" style="background-color: {{ androidgreen.dark.hex }}">
+    <div>Name: {{ androidgreen.dark.label }}</div>
+    <div>Class: {{ androidgreen.dark.class }}</div>
+    <div>Hex: {{ androidgreen.dark.hex }}</div>
+    <div>RGB: {{ androidgreen.dark.rgb }}</div>
+    <div>CMYK: {{ androidgreen.dark.cmyk }}</div>
+  </div>
+</div>
+
+<div class="{{ androidgreen.default.class }} p-2 mt-2 w-full h-48">
+  {{ androidgreen.default.class }} als Klasse angewendet.
+  Verlauf ändert sich bei Mauseover.
+</div>

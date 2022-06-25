@@ -1,0 +1,33 @@
+<h2>Queenblue</h2>
+<p>Schmuckfarbe.</p>
+
+<div class="flex flex-row gap-1">
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ queenblue.light.hex }}">
+    <div>Name: {{ queenblue.light.label }}</div>
+    <div>Class: {{ queenblue.light.class }}</div>
+    <div>Hex: {{ queenblue.light.hex }}</div>
+    <div>RGB: {{ queenblue.light.rgb }}</div>
+    <div>CMYK: {{ queenblue.light.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-64 h-64 text-white text-xs font-mono font-bold" style="background-color: {{ queenblue.default.hex }}">
+    <div>Name: {{ queenblue.default.label }}</div>
+    <div>Class: {{ queenblue.default.class }}</div>
+    <div>Hex: {{ queenblue.default.hex }}</div>
+    <div>RGB: {{ queenblue.default.rgb }}</div>
+    <div>CMYK: {{ queenblue.default.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ queenblue.dark.hex }}">
+    <div>Name: {{ queenblue.dark.label }}</div>
+    <div>Class: {{ queenblue.dark.class }}</div>
+    <div>Hex: {{ queenblue.dark.hex }}</div>
+    <div>RGB: {{ queenblue.dark.rgb }}</div>
+    <div>CMYK: {{ queenblue.dark.cmyk }}</div>
+  </div>
+</div>
+
+<div class="{{ queenblue.default.class }} p-2 mt-2 w-full h-48">
+  {{ queenblue.default.class }} als Klasse angewendet.
+  Verlauf ändert sich bei Mauseover.
+</div>
