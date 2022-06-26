@@ -2,15 +2,67 @@
 
 <div class="layout-container w-full">
 
-  <section name="visitor_message" class="honeyyellow">
-    Important message to Readers
+  <section name="visitor_message" class="hidden honeyyellow">
+    <p>Important message to Readers</p>
   </section>
 
-  <header role="banner" class="relative md:sticky top-0 z-50 bg-brand1 shadow-lg">
+  <header role="banner" class="relative md:sticky top-0 z-50 bg-ghostwhite">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row gap-x-7 items-center">
-        Page Header: Branding (Logo, Name, Slogan)
-        Primary Menu
+        <a href="#" class="w-[350px]">
+  <div class="site-branding w-[350px] flex flex-row items-center gap-2 border">
+      <div class="site-logo not-prose">
+  <img src="/assets/logo/de-pack-logo.svg" width="160">
+</div>
+      <div class="whitespace-no-wrap">
+        <div class="site-name font-bold text-2xl whitespace-no-wrap not-prose">
+  DE-PACK
+</div>
+        <div class="site-slogan text-sm whitespace-no-wrap not-prose">
+  Innovative Verpackungen
+</div>
+      </div>
+  </div>
+</a>
+        
+<nav class="w-full bg-ghostwhite text-base font-bold">
+  <ul class="menu parents flex flex-row gap-4">
+            <li class="parent px-2 py-4">
+        <a class="parent whitespace-nowrap" href="#">Eintrag 1</a>
+      </li>
+            <li class="parent has-children px-2 py-4">
+        <a class="parent has-children whitespace-nowrap" href="#">Eintrag 2</a>
+        <ul class="children flex flex-col gap-4">
+                    <li class="child bg-ghostwhite px-2 py-4">
+            <a class="child whitespace-nowrap" href="#">Eintrag 2 - 1</a>
+          </li>
+                    <li class="child bg-ghostwhite px-2 py-4">
+            <a class="child whitespace-nowrap" href="#">Eintrag 2 - 2</a>
+          </li>
+                    <li class="child bg-ghostwhite px-2 py-4">
+            <a class="child whitespace-nowrap" href="#">Eintrag 2 - 3</a>
+          </li>
+                  </ul>
+      </li>
+            <li class="parent px-2 py-4">
+        <a class="parent whitespace-nowrap" href="#">Eintrag 3</a>
+      </li>
+            <li class="parent has-children px-2 py-4">
+        <a class="parent has-children whitespace-nowrap" href="#">Eintrag 4</a>
+        <ul class="children flex flex-col gap-4">
+                    <li class="child bg-ghostwhite px-2 py-4">
+            <a class="child whitespace-nowrap" href="#">Eintrag 4 - 1</a>
+          </li>
+                    <li class="child bg-ghostwhite px-2 py-4">
+            <a class="child whitespace-nowrap" href="#">Eintrag 4 - 2</a>
+          </li>
+                  </ul>
+      </li>
+            <li class="parent px-2 py-4">
+        <a class="parent whitespace-nowrap" href="#">Eintrag 5</a>
+      </li>
+    </ul>
+</nav>
         <div class="hidden md:block">
             Secondary Menu
         </div>
@@ -19,7 +71,7 @@
   </header>
 
   <section name="hero" class="bg-onyx">
-    <div class="w-full bg-onyx">
+    <div class="w-full bg-onyx p-4 pb-12">
 
   <div
     x-data="{

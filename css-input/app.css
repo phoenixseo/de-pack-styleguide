@@ -21,6 +21,13 @@
   html {
     font-family: Montserrat;
   }
+
+  section,
+  main,
+  header,
+  footer {
+    @apply border;
+  }
 }
 
 :root {
@@ -111,4 +118,15 @@ button,
 /* tabs + tab */
 .tabs-tab {
   @apply w-full sm:w-fit border-none bg-transparent text-white hover:text-onyx rounded-none;
+}
+
+/* menu stuff */
+ul.menu {
+  @apply relative;
+}
+ul.children {
+  @apply absolute hidden;
+}
+li.has-children:hover ul.children {
+  @apply block;
 }

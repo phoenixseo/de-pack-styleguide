@@ -1,14 +1,14 @@
 <div class="layout-container w-full">
 
-  <section name="visitor_message" class="honeyyellow">
-    Important message to Readers
+  <section name="visitor_message" class="hidden honeyyellow">
+    <p>Important message to Readers</p>
   </section>
 
-  <header role="banner" class="relative md:sticky top-0 z-50 bg-brand1 shadow-lg">
+  <header role="banner" class="relative md:sticky top-0 z-50 bg-ghostwhite">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row gap-x-7 items-center">
-        Page Header: Branding (Logo, Name, Slogan)
-        Primary Menu
+        {% render '@site-branding' %}
+        {% render '@menu' %}
         <div class="hidden md:block">
             Secondary Menu
         </div>

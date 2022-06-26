@@ -1,0 +1,9 @@
+{
+  "title": "Slogan",
+  "label": "Slogan",
+  "status": "ready",
+  "preview": "@preview-without-prose",
+  "context": {
+    "website_slogan": "Innovative Verpackungen"
+  }
+}

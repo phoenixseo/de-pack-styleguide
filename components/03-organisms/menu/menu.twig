@@ -1,0 +1,28 @@
+{%
+  set menuentry_spacing = 'px-2 py-4'
+%}
+{%
+  set whitespace_behaviour = 'whitespace-nowrap'
+%}
+
+<nav class="w-full bg-ghostwhite text-base font-bold">
+  <ul class="menu parents flex flex-row gap-4">
+  {% for m in menu %}
+    {% if m.children %}
+      <li class="parent has-children {{ menuentry_spacing }}">
+        <a class="parent has-children {{ whitespace_behaviour }}" href="#">{{ m.label }}</a>
+        <ul class="children flex flex-col gap-4">
+          {% for child in m.children %}
+          <li class="child bg-ghostwhite {{ menuentry_spacing }}">
+            <a class="child {{ whitespace_behaviour }}" href="#">{{ child.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+    {% else %}
+      <li class="parent {{ menuentry_spacing }}">
+        <a class="parent {{ whitespace_behaviour }}" href="#">{{ m.label }}</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+  </ul>
+</nav>

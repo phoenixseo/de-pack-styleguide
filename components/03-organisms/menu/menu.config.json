@@ -1,0 +1,52 @@
+{
+  "title": "Menu",
+  "label": "Menu",
+  "status": "wip",
+  "preview": "@preview-without-prose",
+  "context": {
+    "menu": [
+      {
+        "label": "Eintrag 1",
+        "children": ""
+      },
+      {
+        "label": "Eintrag 2",
+        "children": [
+          {
+            "label": "Eintrag 2 - 1",
+            "children": ""
+          },
+          {
+            "label": "Eintrag 2 - 2",
+            "children": ""
+          },
+          {
+            "label": "Eintrag 2 - 3",
+            "children": ""
+          }
+        ]
+      },
+      {
+        "label": "Eintrag 3",
+        "children": ""
+      },
+      {
+        "label": "Eintrag 4",
+        "children": [
+          {
+            "label": "Eintrag 4 - 1",
+            "children": ""
+          },
+          {
+            "label": "Eintrag 4 - 2",
+            "children": ""
+          }
+        ]
+      },
+      {
+        "label": "Eintrag 5",
+        "children": ""
+      }
+    ]
+  }
+}
