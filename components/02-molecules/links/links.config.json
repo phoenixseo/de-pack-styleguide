@@ -1,0 +1,9 @@
+{
+  "title": "Links Showcase",
+  "label": "Links",
+  "status": "ready",
+  "context": {
+    "textbefore": "Lorem ipsum dolor sit amet, ",
+    "textafter": "consectetur adipiscing elit, sed do eiusmod tempor"
+  }
+}

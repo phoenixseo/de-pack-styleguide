@@ -23,6 +23,9 @@ fractal.components.set('path', __dirname + '/components');
 fractal.components.set('default.preview', '@preview');
 
 
+fractal.docs.engine(twigAdapter);
+fractal.docs.set('ext', '.twig');
+
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/docs');
 

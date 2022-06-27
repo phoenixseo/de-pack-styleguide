@@ -101,17 +101,23 @@ button,
 .btn-sm {
   @apply px-3 py-2 text-sm;
 }
-.lava {
+.lava-gradient {
   @apply bg-gradient-to-b from-lava to-lava-dark text-white hover:bg-gradient-to-b hover:from-lava-light hover:to-lava focus:ring-lava-dark;
 }
-.honeyyellow {
+.honeyyellow-gradient {
   @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-black hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
 }
-.androidgreen {
+.androidgreen-gradient {
   @apply bg-gradient-to-b from-androidgreen to-androidgreen-dark text-black hover:bg-gradient-to-b hover:from-androidgreen-light hover:to-androidgreen focus:ring-androidgreen-dark;
 }
-.onyx {
+.onyx-gradient {
   @apply bg-gradient-to-b from-onyx to-onyx-dark text-white hover:bg-gradient-to-b hover:from-onyx-light hover:to-onyx focus:ring-onyx-dark;
+}
+.queenblue-gradient {
+  @apply bg-gradient-to-b from-queenblue to-queenblue-dark text-white hover:bg-gradient-to-b hover:from-queenblue-light hover:to-queenblue focus:ring-queenblue-dark;
+}
+.darkskyblue-gradient {
+  @apply bg-gradient-to-b from-darkskyblue to-darkskyblue-dark text-white hover:bg-gradient-to-b hover:from-darkskyblue-light hover:to-darkskyblue focus:ring-darkskyblue-dark;
 }
 
 
