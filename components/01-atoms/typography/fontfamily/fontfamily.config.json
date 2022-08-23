@@ -1,0 +1,10 @@
+{
+  "title": "Font Family",
+  "label": "Font Family",
+  "context": {
+      "font_sans": "Montserrat",
+      "font_serif": "Serif",
+      "font_mono": "Mono",
+      "smalltext": "The quick brown fox jumps over the lazy dog."
+  }
+}

@@ -1,27 +1,42 @@
 'use strict';
 
+/* fractal configuration ------------------ */
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
+
+/* Set the title of the project */
+fractal.set('project.title', 'DE-PACK Component Library');
+
+/* Set the preview Template */
+fractal.components.set('default.preview', '@preview');
+
+
+/* components config ---------------------- */
+
+/* Tell Fractal where the components will live */
+fractal.components.set('path', __dirname + '/components');
 
 /* require the twig adapter */
 const twigAdapter = require('@frctl/twig')();
 fractal.components.engine(twigAdapter);
 fractal.components.set('ext', '.twig');
-/*fractal.docs.engine(twigAdapter);*/
 
-/* set the theme */
-const webUITheme = require('@frctl/mandelbrot');
 
-/* Set the title of the project */
-fractal.set('project.title', 'DE-PACK Component Library');
+/* assets config -------------------------- */
 
-/* Tell Fractal where the components will live */
-fractal.components.set('path', __dirname + '/components');
+/* Specify a directory of static assets */
+fractal.web.set('static.path', __dirname + '/assets');
+fractal.web.set('static.mount', 'assets');
 
-/* Set the preview Template */
-fractal.components.set('default.preview', '@preview');
 
+/* static build config -------------------- */
+
+/* Tell Fractal where to put the static build */
+fractal.web.set('builder.dest', __dirname + '/web');
+
+
+/* docs configuration --------------------- */
 
 fractal.docs.engine(twigAdapter);
 fractal.docs.set('ext', '.twig');
@@ -29,12 +44,8 @@ fractal.docs.set('ext', '.twig');
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/docs');
 
-/* Specify a directory of static assets */
-fractal.web.set('static.path', __dirname + '/assets');
-fractal.web.set('static.mount', 'assets');
 
-/* Tell Fractal where to put the static build */
-fractal.web.set('builder.dest', __dirname + '/web');
+/* Statuses config ------------------------ */
 
 /* Statuses */
 fractal.components.set('statuses', {
@@ -68,7 +79,10 @@ fractal.docs.set('statuses', {
   }
 });
 
+/* theme config ----------------------------*/
 
+/* set the theme */
+const webUITheme = require('@frctl/mandelbrot');
 
 /*
  * Theme

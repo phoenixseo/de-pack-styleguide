@@ -1,22 +1,72 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../../assets/css/app.css">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Site Name: Default</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+<style>
+    :root {
+        
+        --skin-accent: 195, 25, 36;
+        
+        
+        --skin-complement: 255, 255, 255;
+        
+        
+        --skin-links: 195, 25, 36;
+        
+    }
+</style>
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/fuchsia.css?cachebust=1.10.1" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.1" type="text/css">
+
+
+<title>Error rendering component site-name | DE-PACK Component Library</title>
+
 </head>
 <body>
 
-  <div class="prose sm:prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl">
-    <div class="site-name font-bold text-2xl whitespace-no-wrap not-prose">
-  DE-PACK
+
+
+<div class="Frame Frame--full" id="frame">
+
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>Error: Could not render component &#39;@name&#39; - component not found.</p>
+
+    </div>
+    
+    <code class="Error-stack">
+        <pre>Error: Error: Could not render component '@name' - component not found.
+    at /var/home/frankpfabigan/styx/files/www/x-dev/de-pack/web/themes/custom/swiftly/node_modules/@frctl/twig/src/adapter.js:156:24
+    at new Promise (<anonymous>)
+    at TwigAdapter.render (/var/home/frankpfabigan/styx/files/www/x-dev/de-pack/web/themes/custom/swiftly/node_modules/@frctl/twig/src/adapter.js:134:16)
+    at ComponentSource._renderVariant (/var/home/frankpfabigan/styx/files/www/x-dev/de-pack/web/themes/custom/swiftly/node_modules/@frctl/fractal/src/api/components/source.js:212:30)
+    at _renderVariant.next (<anonymous>)
+    at onFulfilled (/var/home/frankpfabigan/styx/files/www/x-dev/de-pack/web/themes/custom/swiftly/node_modules/co/index.js:65:19)</pre>
+    </code>
+    
 </div>
 
-  </div>
+
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.1"></script>
+
+
 
 </body>
 </html>
-

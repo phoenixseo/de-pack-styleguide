@@ -1,0 +1,72 @@
+name: Swiftly
+type: theme
+base theme: stable9
+description: 'Swiftly Theme by PHOENIXSEO.de. Based on Tailwind CSS.'
+core_version_requirement: ^8.9 || ^9 || ^10
+dependencies:
+  - drupal:components
+  - drupal:simplify_menu
+
+libraries:
+  - swiftly/global-styling
+
+# REGIONS ------------------------------------------------
+# standard regions
+#  sidebar_first: 'Left sidebar'
+#  sidebar_second: 'Right sidebar'
+#  content: 'Content'
+#  header: 'Header'
+#  primary_menu: 'Primary menu'
+#  secondary_menu: 'Secondary menu'
+#  footer: 'Footer'
+#  highlighted: 'Highlighted'
+#  help: 'Help'
+#  page_top: 'Page top'
+#  page_bottom: 'Page bottom'
+#  breadcrumb: 'Breadcrumb'
+
+regions:
+  message: 'Message for Visitors'
+  header: 'Header Region'
+  branding: 'Site Branding Region'
+  primary_menu: 'Primary Menu Region'
+  secondary_menu: 'Secondary Menu Region'
+  hero: 'Hero Region'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted Region'
+  content_above: 'Content Above Region'
+  help: 'Help'
+  system_messages: 'System Messages Region'
+  content_toolbar: 'Content Toolbar Region'
+  page_title: 'Page title Region'
+  content: 'Content Main Region'
+  content_below: 'Content Below Region'
+  content_below2: 'Content Below 2 Region'
+  cta: 'CTA - Call to Action'
+  content_below3: 'Content Below 3 Region'
+  sidebar_first: 'Sidebar First Region'
+  sidebar_second: 'Sidebar Second Region'
+  footer: 'Footer Region'
+  subfooter: 'Subfooter Region'
+  endfooter: 'Endfooter Region'
+  page_top: 'Page Top Region'
+  page_bottom: 'Page Bottom Region'
+regions_hidden:
+
+version: '9.x-1.0.0'
+project: 'depackswiftly'
+
+components:
+  namespaces:
+    base:
+      - components/00-base
+    atoms:
+      - components/01-atoms
+    molecules:
+      - components/02-molecules
+    organisms:
+      - components/03-organisms
+    templates:
+      - components/04-templates
+    pages:
+      - components/05-pages

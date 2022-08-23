@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Theme override for the messages block.
+ *
+ * Removes wrapper elements from block so that empty block does not appear when
+ * there are no messages.
+ *
+ * Available variables:
+ * - content: The content of this block.
+ */
+#}
+{% if content %}
+<div class="max-h-40 resize overflow-auto overscroll-contain bg-neutral-100">
+{{ content }}
+</div>
+{% endif %}

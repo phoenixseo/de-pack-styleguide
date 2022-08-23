@@ -1,0 +1,11 @@
+{
+  "title": "Site",
+  "label": "Site",
+  "status": "ready",
+  "preview": "@preview-without-prose",
+  "context": {
+    "site_name": "DE-PACK",
+    "site_slogan": "Innovative Verpackungen",
+    "site_tagline": "➔ Online-Marketing Beratung mit Fokus auf SEO und Google Ads"
+  }
+}

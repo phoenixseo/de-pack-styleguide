@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+/**
+ * main css file
+ * loads this app's stylesheets
+ */
+@import "tailwindcss/base";
+/*@import "css-base-loader.css";*/
+
+@import "tailwindcss/components";
+/*@import "./css-components-loader.css";*/
+
+@import "tailwindcss/utilities";
+/*@import "css-utilities-loader.css";*/
+
+
+@layer base {
+  section,
+  main,
+  header,
+  footer {
+    @apply border;
+  }
+}
+
+:root {
+	--icon-link-external: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> \
+    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /> \
+  </svg>');
+
+  --icon-link-tel: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> \
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" /> \
+  </svg>\
+  ');
+
+  --icon-link-mail: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">\
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />\
+</svg>\
+  ');
+
+  --icon-link-download: url('data:image/svg+xml,\
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">\
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />\
+  </svg>\
+  ');
+
+}
+
+/* utilities */
+.prose-all {
+	@apply prose sm:prose-sm md:prose lg:prose-lg xl:prose-xl 2xl:prose-2xl;
+}
+
+/* links */
+
+a[target="_blank"]::after {
+  content: '';
+  background: no-repeat var(--icon-link-external);
+  padding-right: 1.65rem;
+}
+a.lnk-tel::before {
+  content: '';
+  background: no-repeat var(--icon-link-tel);
+  padding-left: 1.65rem;
+}
+a.lnk-mail::before {
+  content: '';
+  background: no-repeat var(--icon-link-mail);
+  padding-left: 1.65rem;
+}
+a.lnk-download::before {
+  content: '';
+  background: no-repeat var(--icon-link-download);
+  padding-left: 1.65rem;
+}
+
+
+
+/* definition lists, dl-dt-dd */
+dl {
+  @apply sm:grid sm:grid-cols-2 border-t border-gray-200;
+}
+dt {
+  @apply font-bold border-b py-4;
+}
+dd {
+  @apply border-b py-4;
+}
+
+/* the button definitions */
+button,
+.btn {
+  @apply inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-bold rounded-md bg-white hover:bg-ghostwhite focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lava no-underline;
+}
+.btn-sm {
+  @apply px-3 py-2 text-sm;
+}
+.lava-gradient {
+  @apply bg-gradient-to-b from-lava to-lava-dark text-white hover:bg-gradient-to-b hover:from-lava-light hover:to-lava focus:ring-lava-dark;
+}
+.honeyyellow-gradient {
+  @apply bg-gradient-to-b from-honeyyellow to-honeyyellow-dark text-black hover:bg-gradient-to-b hover:from-honeyyellow-light hover:to-honeyyellow focus:ring-honeyyellow-dark;
+}
+.androidgreen-gradient {
+  @apply bg-gradient-to-b from-androidgreen to-androidgreen-dark text-black hover:bg-gradient-to-b hover:from-androidgreen-light hover:to-androidgreen focus:ring-androidgreen-dark;
+}
+.onyx-gradient {
+  @apply bg-gradient-to-b from-onyx to-onyx-dark text-white hover:bg-gradient-to-b hover:from-onyx-light hover:to-onyx focus:ring-onyx-dark;
+}
+.queenblue-gradient {
+  @apply bg-gradient-to-b from-queenblue to-queenblue-dark text-white hover:bg-gradient-to-b hover:from-queenblue-light hover:to-queenblue focus:ring-queenblue-dark;
+}
+.darkskyblue-gradient {
+  @apply bg-gradient-to-b from-darkskyblue to-darkskyblue-dark text-white hover:bg-gradient-to-b hover:from-darkskyblue-light hover:to-darkskyblue focus:ring-darkskyblue-dark;
+}
+
+
+/* tabs + tab */
+.tabs-tab {
+  @apply w-full sm:w-fit border-none bg-transparent text-white hover:text-onyx rounded-none;
+}
+
+/* menu stuff */
+ul.menu {
+  @apply relative;
+}
+ul.children {
+  @apply absolute hidden;
+}
+li.has-children:hover ul.children {
+  @apply block;
+}
