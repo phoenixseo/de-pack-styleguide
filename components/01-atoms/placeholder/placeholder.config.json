@@ -1,0 +1,11 @@
+{
+  "title": "Placeholder",
+  "label": "Placeholder",
+  "status": "prototype",
+  "context": {
+    "dx": "w-full font-mono text-sm",
+    "dy": "h-16",
+    "inner": "bg-indigo-10",
+    "content": "platzhalter"
+  }
+}

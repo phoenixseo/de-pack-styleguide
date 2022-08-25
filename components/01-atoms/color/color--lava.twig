@@ -1,0 +1,33 @@
+<h2>Lava</h2>
+<p>Logo-Farbe als Richtwert für alle anderen Farben, Schmuckfarben und Schattierungen.</p>
+
+<div class="flex flex-row gap-1">
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ colors.lava.light.hex }}">
+    <div>Name: {{ colors.lava.light.label }}</div>
+    <div>Class: {{ colors.lava.light.class }}</div>
+    <div>Hex: {{ colors.lava.light.hex }}</div>
+    <div>RGB: {{ colors.lava.light.rgb }}</div>
+    <div>CMYK: {{ colors.lava.light.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-64 h-64 text-white text-xs font-mono font-bold" style="background-color: {{ colors.lava.default.hex }}">
+    <div>Name: {{ colors.lava.default.label }}</div>
+    <div>Class: {{ colors.lava.default.class }}</div>
+    <div>Hex: {{ colors.lava.default.hex }}</div>
+    <div>RGB: {{ colors.lava.default.rgb }}</div>
+    <div>CMYK: {{ colors.lava.default.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ colors.lava.dark.hex }}">
+    <div>Name: {{ colors.lava.dark.label }}</div>
+    <div>Class: {{ colors.lava.dark.class }}</div>
+    <div>Hex: {{ colors.lava.dark.hex }}</div>
+    <div>RGB: {{ colors.lava.dark.rgb }}</div>
+    <div>CMYK: {{ colors.lava.dark.cmyk }}</div>
+  </div>
+</div>
+
+<div class="lava-gradient p-2 mt-2 w-full h-48">
+  'lava-gradient' als Klasse angewendet.
+  Verlauf ändert sich bei Mauseover.
+</div>

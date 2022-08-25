@@ -1,0 +1,33 @@
+<h2>Onyx</h2>
+<p>Anwendung für Störbalken (CTA) und Footer.</p>
+
+<div class="flex flex-row gap-1">
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ colors.onyx.light.hex }}">
+    <div>Name: {{ colors.onyx.light.label }}</div>
+    <div>Class: {{ colors.onyx.light.class }}</div>
+    <div>Hex: {{ colors.onyx.light.hex }}</div>
+    <div>RGB: {{ colors.onyx.light.rgb }}</div>
+    <div>CMYK: {{ colors.onyx.light.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-64 h-64 text-white text-xs font-mono font-bold" style="background-color: {{ colors.onyx.default.hex }}">
+    <div>Name: {{ colors.onyx.default.label }}</div>
+    <div>Class: {{ colors.onyx.default.class }}</div>
+    <div>Hex: {{ colors.onyx.default.hex }}</div>
+    <div>RGB: {{ colors.onyx.default.rgb }}</div>
+    <div>CMYK: {{ colors.onyx.default.cmyk }}</div>
+  </div>
+
+  <div class="p-2 w-48 h-48 text-white text-xs font-mono" style="background-color: {{ colors.onyx.dark.hex }}">
+    <div>Name: {{ colors.onyx.dark.label }}</div>
+    <div>Class: {{ colors.onyx.dark.class }}</div>
+    <div>Hex: {{ colors.onyx.dark.hex }}</div>
+    <div>RGB: {{ colors.onyx.dark.rgb }}</div>
+    <div>CMYK: {{ colors.onyx.dark.cmyk }}</div>
+  </div>
+</div>
+
+<div class="onyx-gradient p-2 mt-2 w-full h-48">
+  'onyx-gradient' als Klasse angewendet.
+  Verlauf ändert sich bei Mauseover.
+</div>

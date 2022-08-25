@@ -1,0 +1,131 @@
+{
+  "title": "Link",
+  "label": "Link",
+  "status": "ready",
+  "context": {
+    "textbefore": "Lorem ipsum dolor sit amet, ",
+    "textafter": "consectetur adipiscing elit, sed do eiusmod tempor"
+  },
+  "variants": [
+    {
+      "name": "default",
+      "label": "Normal",
+      "context": {
+        "linktext": "Dies ist ein Link",
+        "class": "normal",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "buttonsmall",
+      "label": "Small Button",
+      "context": {
+        "linktext": "Dies ist ein Link",
+        "class": "btn btn-sm",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "extern",
+      "label": "Externer Link",
+      "context": {
+        "linktext": "Ein externer Link",
+        "class": "",
+        "target": "_blank",
+        "href": "#"
+      }
+    },
+    {
+      "name": "tel",
+      "label": "Telefon Link",
+      "context": {
+        "linktext": "Ruf jetzt 0451-7020358 an",
+        "class": "lnk-tel",
+        "target": "_self",
+        "href": "tel:04517020358"
+      }
+    },
+    {
+      "name": "mail",
+      "label": "Email Link",
+      "context": {
+        "linktext": "chakalakka info@phoenixseo.de",
+        "class": "lnk-mail",
+        "target": "_self",
+        "href": "mailto:info@phoenixseo.de"
+      }
+    },
+    {
+      "name": "download",
+      "label": "Download Link",
+      "context": {
+        "linktext": "Tolle Datei runterladen Schnute.pdf (36 Kb)",
+        "class": "lnk-download",
+        "target": "_self",
+        "href": "schnute.pdf"
+      }
+    },
+    {
+      "name": "lava small",
+      "label": "Lava Small Button",
+      "context": {
+        "linktext": "Bunter kleiner Lava Button",
+        "class": "btn btn-sm lava-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "honeyyellow small",
+      "label": "Honeyyellow Small Button",
+      "context": {
+        "linktext": "Bunter kleiner honeyyellow Button",
+        "class": "btn btn-sm honeyyellow-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "androidgreen small",
+      "label": "Androidgreen Small Button",
+      "context": {
+        "linktext": "Bunter kleiner androidgreen Button",
+        "class": "btn btn-sm androidgreen-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "darkskyblue small",
+      "label": "Darkskyblue Small Button",
+      "context": {
+        "linktext": "Bunter kleiner darkskyblue Button",
+        "class": "btn btn-sm darkskyblue-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "queenblue small",
+      "label": "Queenblue Small Button",
+      "context": {
+        "linktext": "Bunter kleiner queenblue Button",
+        "class": "btn btn-sm queenblue-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    },
+    {
+      "name": "onyx small",
+      "label": "Onyx Small Button",
+      "context": {
+        "linktext": "Bunter kleiner onyx Button",
+        "class": "btn btn-sm onyx-gradient",
+        "target": "_self",
+        "href": "#"
+      }
+    }
+  ]
+}

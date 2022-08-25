@@ -3,8 +3,8 @@
   "label": "Font Family",
   "context": {
       "font_sans": "Montserrat",
-      "font_serif": "Serif",
-      "font_mono": "Mono",
+      "font_serif": "Crimson Text",
+      "font_mono": "Source Code Pro",
       "smalltext": "The quick brown fox jumps over the lazy dog."
   }
 }

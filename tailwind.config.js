@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['"Montserrat"', 'sans-serif']
-/*      'serif': ['"Source Serif Pro"', 'serif'],*/
-/*      'mono': ['"Source Code Pro"', 'mono']*/
+      'sans': ['"Montserrat"', 'sans-serif'],
+      'serif': ['"Crimson Text"', 'serif'],
+      'mono': ['"Source Code Pro"', 'mono']
     },
     extend: {
       colors: {
@@ -44,6 +44,18 @@ module.exports = {
           light: '#b2d4e6',
           dark: '#74b1d2'
         }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              color: '#a2151f',
+              '&:hover': {
+                color: '#c31924'
+              }
+            },
+          },
+        },
       },
     },
   },

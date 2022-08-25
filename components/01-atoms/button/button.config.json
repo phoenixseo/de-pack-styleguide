@@ -1,0 +1,66 @@
+{
+  "title": "Button",
+  "label": "Button",
+  "status": "wip",
+  "context": {
+    "buttontext": "Button Text"
+  },
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "class": "btn",
+        "text": "Default Button"
+      }
+    },
+    {
+      "name": "small",
+      "context": {
+        "class": "btn btn-sm",
+        "text": "Small Button"
+      }
+    },
+    {
+      "name": "Lava",
+      "context": {
+        "class": "btn lava-gradient",
+        "text": "Lava Button"
+      }
+    },
+    {
+      "name": "Honeyyellow",
+      "context": {
+        "class": "btn honeyyellow-gradient",
+        "text": "Honyyellow Button"
+      }
+    },
+    {
+      "name": "Androidgreen",
+      "context": {
+        "class": "btn androidgreen-gradient",
+        "text": "Androidgreen Button"
+      }
+    },
+    {
+      "name": "Onyx",
+      "context": {
+        "class": "btn onyx-gradient",
+        "text": "Onyx Button"
+      }
+    },
+    {
+      "name": "Darkskyblue",
+      "context": {
+        "class": "btn darkskyblue-gradient",
+        "text": "Darkskyblue Button"
+      }
+    },
+    {
+      "name": "Queenblue",
+      "context": {
+        "class": "btn queenblue-gradient",
+        "text": "Queenblue Button"
+      }
+    }
+  ]
+}

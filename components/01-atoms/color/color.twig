@@ -1,0 +1,23 @@
+<h1>Color</h1>
+
+<div class="flex flex-row gap-1">
+  {% for col in colors %}
+  <div class="p-2 w-64 h-64 text-xs font-mono bg-{{ col.default.class }}">
+    <div class="bg-white">
+      <div>Class: {{ col.default.class }}</div>
+      <div>Hex: {{ col.default.hex }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Alle Farben mit Schattierungen</h2>
+
+{% include '@color--lava' %}
+{% include '@color--honeyyellow' %}
+{% include '@color--androidgreen' %}
+{% include '@color--onyx' %}
+{% include '@color--isabelline' %}
+{% include '@color--ghostwhite' %}
+{% include '@color--queenblue' %}
+{% include '@color--darkskyblue' %}

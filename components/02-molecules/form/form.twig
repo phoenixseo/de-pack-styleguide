@@ -3,10 +3,12 @@
   {% include '@fe--date' %}
   {% include '@fe--time' %}
   {% include '@fe--email' %}
-  {% include '@fe--select' %}
+  {% render '@fe--select' %}
   {% include '@fe--checkbox' %}
   {% include '@fe--radio' %}
   {% include '@fe--password' %}
   {% include '@fe--textarea' %}
-  {% include '@button--lava' with { "buttontext": "Wuhuuu" } %}
+  <div class="mt-4 mb-4">
+    {% include '@button--lava' with { "text": "Formular Absenden", "class": "btn lava-gradient" } %}
+  </div>
 </form>
