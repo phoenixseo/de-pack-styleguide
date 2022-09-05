@@ -5,7 +5,6 @@ description: 'Swiftly Theme by PHOENIXSEO.de. Based on Tailwind CSS.'
 core_version_requirement: ^8.9 || ^9 || ^10
 dependencies:
   - drupal:components
-  - drupal:simplify_menu
 
 libraries:
   - swiftly/global-styling
@@ -26,7 +25,8 @@ libraries:
 #  breadcrumb: 'Breadcrumb'
 
 regions:
-  message: 'Message for Visitors'
+  message: 'Message 1 Region'
+  message2: 'Message 2 Region'
   header: 'Header Region'
   branding: 'Site Branding Region'
   primary_menu: 'Primary Menu Region'
@@ -34,6 +34,9 @@ regions:
   hero: 'Hero Region'
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted Region'
+  col_one: '3 Cols (1) Above Region'
+  col_two: '3 Cols (2) Above Region'
+  col_three: '3 Cols (3) Above Region'
   content_above: 'Content Above Region'
   help: 'Help'
   system_messages: 'System Messages Region'

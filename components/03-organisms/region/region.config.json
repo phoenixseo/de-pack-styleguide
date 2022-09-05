@@ -1,0 +1,10 @@
+{
+  "title": "Region",
+  "label": "Region",
+  "status": "wip",
+  "preview": "@preview-without-prose",
+  "context": {
+    "content": "<div class=\"text-5xl\">Some default Content</div>",
+    "image": "<img src=\"/assets/logo/de-pack-logo.svg\" width=\"124\">"
+  }
+}

@@ -1,0 +1,21 @@
+{% macro menu_links(items, attributes, menu_level, menu_class, menu_modifiers, menu_blockname, item_base_class, item_modifiers, item_blockname, directory) %}
+  {% import _self as menus %}
+  {% if items %}
+
+    {# Set classes #}
+    {% set menu_class = menu_class|default('menu') %}
+    {% if not menu_modifiers %}
+      {% set menu_modifiers = [] %}
+    {% endif %}
+    {% if menu_level > 0 %}
+      {% set menu_modifiers = menu_modifiers|merge(['sub', 'sub-' ~ menu_level]) %}
+    {% endif %}
+
+    {% include "@molecules/menus/_menu-list.twig" %}
+  {% endif %}
+{% endmacro %}
+
+{% import _self as menus %}
+
+{% themenu = menu %}
+{{ menu.menu_links(items, attributes, 0, menu_class, menu_modifiers, menu_blockname, item_base_class, item_modifiers, item_blockname, directory) }}

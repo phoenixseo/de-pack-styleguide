@@ -7,7 +7,7 @@
 
  // Add a region variable to a block.
  // http://kristiankaa.dk/article/drupal8-region-specific-menu-theme-hook-suggestion
-function next_preprocess_block(&$variables) {
+function swiftly_preprocess_block(&$variables) {
     if (isset($variables["elements"]["#id"])) {
         $block_id = $variables["elements"]["#id"];
         $block = \Drupal\block\Entity\Block::load($block_id);
@@ -20,7 +20,7 @@ function next_preprocess_block(&$variables) {
 
 // add a template suggestion based on region name
 // http://kristiankaa.dk/article/drupal8-region-specific-menu-theme-hook-suggestion
-function next_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+function swiftly_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
     if (isset($variables["attributes"]["region"])) {
         $suggestions[] = $variables["theme_hook_original"] . "__" . $variables["attributes"]["region"];
     }
@@ -31,7 +31,7 @@ function next_theme_suggestions_menu_alter(array &$suggestions, array $variables
  * @param array $suggestions
  * @param array $variables
  */
-function next_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+function swiftly_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   // Block suggestions for custom block bundles.
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
@@ -43,7 +43,7 @@ function next_theme_suggestions_block_alter(array &$suggestions, array $variable
  *
  * Add theme suggestions for img elements.
  */
-function next_theme_suggestions_image_alter(array &$suggestions, array $variables) {
+function swiftly_theme_suggestions_image_alter(array &$suggestions, array $variables) {
   if (isset($variables['style_name']) && !is_null($variables['style_name'])) {
     $suggestion = 'image__' . $variables['style_name'];
     $suggestion = str_replace('-', '_', $suggestion);

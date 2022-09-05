@@ -12,16 +12,12 @@
  * @see template_preprocess_region()
  */
 #}
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-  ]
-%}
 {% if content %}
-<section name="cta" class="w-full azure-gradient my-8">
-  <div {{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
-</section>
+{%
+  include "@organisms/region/region--cta.twig" with {
+    'content': content,
+    'attributes': attributes,
+    'region': region
+  }
+%}
 {% endif %}

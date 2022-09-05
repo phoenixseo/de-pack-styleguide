@@ -1,0 +1,8 @@
+{
+  "title": "Cards",
+  "label": "Card",
+  "default": "card",
+  "status": "wip",
+  "preview": "@preview-without-prose",
+  "context": {}
+}

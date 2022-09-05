@@ -12,18 +12,12 @@
  * @see template_preprocess_region()
  */
 #}
-{%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-    'container',
-    'mx-auto',
-  ]
-%}
 {% if content %}
-<section name="hero" class="w-full py-4">
-  <div {{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
-</section>
+{%
+  include "@organisms/region/region--hero.twig" with {
+    'content': content,
+    'attributes': attributes,
+    'region': region
+  }
+%}
 {% endif %}

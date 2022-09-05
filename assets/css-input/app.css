@@ -20,11 +20,7 @@
 
 
 @layer base {
-  section,
-  main,
-  header,
-  footer {
-    @apply border;
+  section {
   }
 }
 
@@ -52,7 +48,32 @@
   </svg>\
   ');
 
+  --scroll-handle-color: #c31924;
+  --scroll-handle-hover: #a2151f;
+	--scroll-track-color: #efefea;
+  --scroll-width: 1em;
+
 }
+::-webkit-scrollbar {
+  width: var(--scroll-width);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-track-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-handle-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-handle-hover);
+}
+
+body {
+  @apply selection:bg-lava selection:text-white;
+}
+
+section[name="cta"] {
+}
+
 
 /* utilities */
 .prose-all {
@@ -108,7 +129,12 @@ button,
 .btn-sm {
   @apply px-3 py-2 text-sm;
 }
-
+.btn-xs {
+  @apply px-2 py-1 text-xs;
+}
+ul li button {
+  @apply px-3 py-2 text-sm;
+}
 .lava-gradient {
   @apply bg-gradient-to-b from-lava to-lava-dark text-white hover:bg-gradient-to-b hover:from-lava-light hover:to-lava focus:ring-lava-dark;
 }
@@ -152,4 +178,35 @@ ul.children {
 }
 li.has-children:hover ul.children {
   @apply block;
+}
+
+#block-swiftly-views-block-seite-bereiche-block-1-2 {
+  @apply bg-isabelline p-4;
+}
+
+/* cards */
+.card {
+  @apply max-w-sm border shadow-md;
+}
+.card img {
+  @apply w-full m-0;
+}
+.card .card-body {
+  @apply p-4;
+}
+.card .card-title {
+  @apply font-bold text-xl mb-2;
+}
+.card .card-text {
+  @apply text-neutral-700 text-base;
+}
+.card .btn {
+  @apply block mt-4;
+}
+
+/* cards effects */
+.card:hover,
+.card:focus,
+.card:active {
+  @apply shadow-xl;
 }

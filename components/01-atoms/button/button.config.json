@@ -21,6 +21,13 @@
       }
     },
     {
+      "name": "Mini",
+      "context": {
+        "class": "btn btn-xs",
+        "text": "XS Button"
+      }
+    },
+    {
       "name": "Lava",
       "context": {
         "class": "btn lava-gradient",

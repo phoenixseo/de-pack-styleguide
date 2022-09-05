@@ -9,7 +9,8 @@
     "tailwind:watch": "npx tailwindcss -i ./assets/css-input/app.css -o ./assets/css/app.css --watch",
     "fractal:build": "fractal build",
     "fractal:start": "fractal start --sync",
-    "develop": "npm run tailwind:watch & npm run fractal:start",
+    "browser:sync": "browser-sync start --proxy 'http://de-pack.x-dev.sites.test:8088' --no-inject-changes --files './'",
+    "develop": "npm run tailwind:watch & npm run fractal:start & npm run browser:sync",
     "production": "npm run tailwind:generate && npm run fractal:build"
   },
   "dependencies": {
