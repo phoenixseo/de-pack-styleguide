@@ -16,14 +16,15 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
+    'container',
+    'mx-auto',
+    'py-8',
   ]
 %}
 {% if content %}
-<footer name="footer" role="contentinfo" class="w-full">
-  <section name="footer" class="container mx-auto py-8">
-    <div {{ attributes.addClass(classes) }}>
-      {{ content }}
-    </div>
-  </section>
-</footer>
+<section name="footer" class="w-full">
+  <div {{ attributes.addClass(classes) }}>
+    {{ content }}
+  </div>
+</section>
 {% endif %}

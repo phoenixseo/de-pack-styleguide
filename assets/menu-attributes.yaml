@@ -1,0 +1,31 @@
+attributes:
+  class:
+    label: ''
+    description: ''
+  data-icon:
+    label: Menu-Icon
+    description: 'Set an Icon for this menu-entry.'
+    options:
+      icon-academic-cap: Academic-Cap
+      icon-newspaper: Newspaper
+      icon-pencil: Pencil
+      icon-at-symbol: at-Symbol
+      icon-telephone: Telephone
+      icon-external-link: external-Link
+      icon-package: Package
+      icon-cursor-rays: Cursor-Rays
+      icon-cursor-ripple: Cursor-Ripple
+    default_value: ''
+  target:
+    label: ''
+    description: ''
+    options:
+      _blank: 'New window (_blank)'
+      _self: 'Same window (_self)'
+    default_value: ''
+  rel:
+    label: Rel-Attribute
+    description: 'Rel(ation) Attribute festlegen'
+    options:
+      nofollow: nofollow
+    default_value: ''

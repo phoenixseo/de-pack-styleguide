@@ -16,10 +16,14 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
-    'flex',
-    'flex-col',
-    'lg:flex-row',
+    'grid',
+    'grid-cols-1',
+    'lg:grid-cols-3',
+    'grid-flow-col',
+    'auto-cols-auto',
     'gap-8',
+    'justify-items-center',
+    'items-stretch',
   ]
 %}
 {% if content %}

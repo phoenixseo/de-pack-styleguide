@@ -19,7 +19,11 @@
   ]
 %}
 {% if content %}
-  <div {{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
+{%
+  include "@organisms/region/region.twig" with {
+    'content': content,
+    'attributes': attributes,
+    'region': region
+  }
+%}
 {% endif %}

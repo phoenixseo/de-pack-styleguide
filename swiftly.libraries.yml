@@ -6,10 +6,28 @@ global-styling:
 
 alpinejs:
   remote: https://github.com/alpinejs/alpine?utm_source=cdnjs
-  version: 3.4.2
+  version: 3.10.3
   license:
     name: MIT
     url: https://github.com/alpinejs/alpine/blob/main/LICENSE.md
     gpl-compatible: true
   js:
-    //cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.2/cdn.min.js: { type: external, minified: true, attributes: { type: module } }
+    //cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.3/cdn.js: { type: external, minified: true, attributes: { type: module } }
+
+progress:
+  js:
+    templates/extra/progress/progress.js: {}
+  dependencies:
+    - swiftly/alpinejs
+
+tcount:
+  js:
+    templates/extra/tcount/tcount.js: {}
+  dependencies:
+    - swiftly/alpinejs
+
+rtime:
+  js:
+    templates/extra/rtime/rtime.js: {}
+  dependencies:
+    - swiftly/alpinejs

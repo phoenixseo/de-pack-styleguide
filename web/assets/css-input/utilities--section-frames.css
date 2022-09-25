@@ -1,0 +1,46 @@
+@layer utilities {
+
+  section::before,
+  footer::before {
+    @apply font-mono text-xs border p-2 bg-onyx text-white absolute -top-4 left-0;
+  }
+
+  section[name="highlighted"]::before {
+    content: 'highlighted';
+  }
+
+  section[name="content_above"]::before {
+    content: 'content_above';
+  }
+  section[name="content_below"]::before {
+    content: 'content_below';
+  }
+  section[name="content_below2"]::before {
+    content: 'content_below2 (Raster)';
+  }
+  section[name="content_below3"]::before {
+    content: 'content_below3';
+  }
+  footer[name="footer_area"]::before {
+    content: 'footer_area';
+  }
+  section[name="footer"]::before {
+    content: 'footer';
+  }
+  section[name="footer_2"]::before {
+    content: 'footer 2';
+  }
+  section[name="footer_3"]::before {
+    content: 'footer 3';
+  }
+
+  /*
+  .contextual-region.focus {
+    @apply outline outline-lava;
+  }
+  .region {
+    @apply border border-dotted border-lava;
+  }
+  */
+
+}

@@ -1,0 +1,35 @@
+<div
+  x-data="scrollProgressCircular"
+  class="fixed inline-flex items-center justify-center overflow-hidden rounded-full bottom-3 right-5"
+>
+  <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
+  <svg class="w-20 h-20">
+    <circle
+      class="text-gray-300"
+      stroke-width="5"
+      stroke="currentColor"
+      fill="white"
+      r="30"
+      cx="40"
+      cy="40"
+    />
+    <circle
+      class="text-onyx"
+      stroke-width="5"
+      :stroke-dasharray="circumference"
+      :stroke-dashoffset="circumference - percent / 100 * circumference"
+      stroke-linecap="round"
+      stroke="currentColor"
+      fill="transparent"
+      r="30"
+      cx="40"
+      cy="40"
+    />
+  </svg>
+  <a class="absolute top-5 text-xs leading-tight text-onyx w-fit" href="#top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+    </svg>
+  </a>
+  <span class="absolute top-9 text-md text-onyx" x-text="`${percent}%`"></span>
+</div>

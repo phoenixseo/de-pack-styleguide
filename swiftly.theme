@@ -50,3 +50,30 @@ function swiftly_theme_suggestions_image_alter(array &$suggestions, array $varia
     $suggestions[] = $suggestion;
   }
 }
+
+/** fuer menu_attributes:
+ * svg icons als svg sprite bereitstellen
+ * passendes sprite auswaehlen
+ */
+ use Drupal\Component\Render\FormattableMarkup;
+
+ /**
+  * Implements theme_preprocess_menu().
+  */
+ function swiftly_preprocess_menu(&$variables, $hook) {
+   foreach ($variables['items'] as &$item) {
+     $attributes = $item['url']->getOption('attributes');
+     if (isset($attributes['data-icon'])) {
+       $title = new FormattableMarkup('
+        <div class="flex gap-1 items-center">
+         <svg class="icon @icon" viewbox="0 0 24 24"><use xlink:href="#@icon"></use></svg>
+         <span class="hidden md:block">@title</span>
+        </div>
+       ', [
+         '@title' => $item['title'],
+         '@icon' => $attributes['data-icon'],
+       ]);
+       $item['title'] = $title;
+     }
+   }
+ }

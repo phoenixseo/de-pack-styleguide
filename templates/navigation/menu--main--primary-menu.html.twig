@@ -29,67 +29,49 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
 
-  {# tmc = toplevel menu/classes #}
-  {% set tm = create_attribute() %}
-
-  {%
-    set tmc = [
-      'flex',
-      'flex-row',
-      'gap-8',
-      'font-bold',
-      'text-xl',
-      'parent',
-      menu_name|clean_class,
-      'lvl-' ~ (menu_level + 1),
-    ]
-  %}
-
-  {# sm/c = sublevel menu/classes #}
-  {% set sm = create_attribute() %}
-  {%
-    set smc = [
-      'children',
-      'w-auto',
-      'min-w-fit',
-      'bg-neutral-100',
-      'z-50',
-      'shadow-lg',
-      'font-normal',
-      'text-base',
-      'p-4',
-      'border-t-4',
-      'border-solid',
-      'border-azure',
-      menu_name|clean_class,
-      'lvl-' ~ (menu_level + 1),
-    ]
-  %}
-
-
-
+  <div
+    x-data="{ showMenu : false }"
+    @keydown.escape="showMenu = false"
+    :class="{
+      'flex shadow-md bg-isabelline' : showMenu,
+      'bg-isabelline' : !showMenu
+    }"
+  >
   {% if items %}
-    {% if menu_level == 0 %}
-      <ul{{ tm.addClass(tmc).setAttribute('region', 'region-primary-menu') }}>
-    {% else %}
-      <ul{{ sm.addClass(smc) }}>
-    {% endif %}
-    {% for item in items %}
+    <button
+      @click="showMenu = !showMenu"
+      class="block md:hidden"
+      type="button"
+      aria-controls="menumainprimary"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <svg class="w-5 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
 
-      {# mi/c = menu item/classes #}
-      {% set mi = create_attribute() %}
+    {% if menu_level == 0 %}
+      <div
+        id="menumainprimary"
+        class=""
+        :class="{
+          'menu bg-white w-full p-2' : showMenu,
+          'menu menu--horizontal hidden' : !showMenu
+        }"
+      x-cloak>
+    {% else %}
+      <div class="menu__submenu">
+    {% endif %}
+
+
+    {% for item in items %}
+      {# me/c = menu entry/classes #}
+      {% set me = create_attribute() %}
       {%
-        set mic = [
-          'pt-1',
-          'pb-1',
-          'hover:italic',
-          menu_name|clean_class,
-          'lvl-' ~ (menu_level + 1),
-          item.is_expanded ? 'expanded',
-          item.is_collapsed ? 'collapsed',
-          item.in_active_trail ? 'active-trail',
-          item.below ? 'has-children',
-          loop.last ? 'last',
+        set mec = [
+          item.below ? 'menu__entry--parent' : 'menu__entry',
+          loop.last ? 'menu__entry--last',
         ]
       %}
 
@@ -97,22 +79,19 @@
       {% set li = create_attribute() %}
       {%
         set lic = [
-          'text-onyx',
-          'hover:italic',
-          'hover:font-bold',
-          menu_name|clean_class,
-          'lvl-' ~ (menu_level + 1),
-          item.in_active_trail ? 'active-trail',
+          'menu__link',
+          item.in_active_trail ? 'menu__link--active-trail',
         ]
       %}
 
-      <li{{ mi.addClass(mic) }}>
+      <div{{ me.addClass(mec) }}>
         {{ link(item.title, item.url, item.attributes.addClass(lic)) }}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
-      </li>
+      </div>
     {% endfor %}
-    </ul>
+    </div>
   {% endif %}
+</div>
 {% endmacro %}

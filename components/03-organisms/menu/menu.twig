@@ -1,28 +1,27 @@
 {%
-  set menuentry_spacing = 'px-2 py-4'
+  set space = 'px-2 py-2'
 %}
 {%
-  set whitespace_behaviour = 'whitespace-nowrap'
+  set behaviour = 'whitespace-nowrap text-ellipsis overflow-hidden'
 %}
 
-<nav class="w-fit text-base font-bold">
-  <ul class="menu parents flex flex-row gap-4 w-fit">
+<nav class="menu">
   {% for m in menu %}
     {% if m.children %}
-      <li class="parent has-children {{ menuentry_spacing }}">
-        <a class="parent has-children {{ whitespace_behaviour }}" href="#">{{ m.label }}</a>
-        <ul class="children flex flex-col gap-4">
-          {% for child in m.children %}
-          <li class="child bg-mango {{ menuentry_spacing }}">
-            <a class="child {{ whitespace_behaviour }}" href="#">{{ child.label }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+      <div class="menu__entry--parent {{ space }}">
+        <a class="menu__link {{ behaviour }}" href="#">{{ m.label }}</a>
+        <div class="menu menu__submenu">
+      {% for child in m.children %}
+          <div class="menu__entry {{ space }}">
+            <a class="menu__link {{ behaviour }}" href="#">{{ child.label }}</a>
+          </div>
+      {% endfor %}
+        </div>
+      </div>
     {% else %}
-      <li class="parent {{ menuentry_spacing }}">
-        <a class="parent {{ whitespace_behaviour }}" href="#">{{ m.label }}</a>
+      <div class="menu__entry {{ space }}">
+        <a class="menu__link {{ behaviour }}" href="#">{{ m.label }}</a>
+      </div>
     {% endif %}
-  </li>
   {% endfor %}
-  </ul>
 </nav>

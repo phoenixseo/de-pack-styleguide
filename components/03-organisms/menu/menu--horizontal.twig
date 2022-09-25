@@ -1,0 +1,27 @@
+{%
+  set space = 'px-2 py-2'
+%}
+{%
+  set behaviour = 'whitespace-nowrap text-ellipsis overflow-hidden'
+%}
+
+<nav class="menu menu--horizontal">
+{% for m in menu %}
+  {% if m.children %}
+    <div class="menu__entry--parent {{ space }}">
+      <a class="menu__link {{ behaviour }}" href="#">{{ m.label }}</a>
+      <div class="menu menu__submenu">
+      {% for child in m.children %}
+          <div class="menu__entry {{ space }}">
+            <a class="menu__link {{ behaviour }}" href="#">{{ child.label }}</a>
+          </div>
+      {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <div class="menu__entry {{ space }}">
+        <a class="menu__link {{ behaviour }}" href="#">{{ m.label }}</a>
+      </div>
+    {% endif %}
+{% endfor %}
+</nav>

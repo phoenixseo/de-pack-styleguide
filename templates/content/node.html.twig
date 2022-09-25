@@ -67,6 +67,10 @@
  *
  */
 #}
+{{ attach_library('swiftly/tcount') }}
+{{ attach_library('swiftly/rtime') }}
+{% include "/themes/custom/swiftly/templates/extra/tcount/tcount.twig" %}
+{% include "/themes/custom/swiftly/templates/extra/rtime/rtime.twig" %}
 <article{{ attributes.addClass('prose-all') }}>
 
   {{ title_prefix }}

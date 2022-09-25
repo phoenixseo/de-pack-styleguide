@@ -13,71 +13,38 @@
 /*@import "css-base-loader.css";*/
 
 @import "tailwindcss/components";
-/*@import "./css-components-loader.css";*/
+@import "./components--icons.css";
+@import "./components--scrollbars.css";
 
 @import "tailwindcss/utilities";
-/*@import "css-utilities-loader.css";*/
-
-
-@layer base {
-  section {
-  }
-}
-
-:root {
-	--icon-link-external: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> \
-    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /> \
-  </svg>');
-
-  --icon-link-tel: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> \
-    <path stroke-linecap="round" stroke-linejoin="round" d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" /> \
-  </svg>\
-  ');
-
-  --icon-link-mail: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">\
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />\
-</svg>\
-  ');
-
-  --icon-link-download: url('data:image/svg+xml,\
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">\
-    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />\
-  </svg>\
-  ');
-
-  --scroll-handle-color: #c31924;
-  --scroll-handle-hover: #a2151f;
-	--scroll-track-color: #efefea;
-  --scroll-width: 1em;
-
-}
-::-webkit-scrollbar {
-  width: var(--scroll-width);
-}
-::-webkit-scrollbar-track {
-  background-color: var(--scroll-track-color);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-handle-color);
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scroll-handle-hover);
-}
+/*@import "./utilities--section-frames.css";*/
 
 body {
   @apply selection:bg-lava selection:text-white;
 }
 
-section[name="cta"] {
-}
-
-
 /* utilities */
 .prose-all {
 	@apply prose sm:prose-sm md:prose lg:prose-lg xl:prose-xl 2xl:prose-2xl;
+}
+section {
+  @apply relative;
+}
+section[name="hero"] {
+  @apply h-[300px];
+}
+section[name="footer_2"] {
+  @apply bg-[url('https://source.unsplash.com/random/1536x300/?packaging-design')] bg-cover bg-no-repeat grayscale;
+}
+
+.block-title {
+  @apply border-b border-b-onyx;
+}
+.block-title span {
+  @apply border-b-4 border-b-onyx;
+}
+.sticky-top {
+  @apply sticky top-28 h-max;
 }
 
 /* links */
@@ -169,44 +136,185 @@ a.darkskyblue-gradient {
   @apply w-full sm:w-fit border-none bg-transparent text-white hover:text-onyx rounded-none;
 }
 
-/* menu stuff */
-ul.menu {
-  @apply relative;
-}
-ul.children {
-  @apply absolute hidden;
-}
-li.has-children:hover ul.children {
-  @apply block;
+
+/* menu-icons (menu_link_attributes) */
+.icon {
+  @apply w-4 fill-transparent stroke-onyx hover:stroke-lava;
 }
 
+
+/* menu stuff */
+.menu {
+  @apply w-fit flex flex-col gap-2;
+}
+.menu--horizontal {
+  @apply hidden md:flex flex-row gap-0 md:gap-1 lg:gap-2;
+}
+.menu__submenu {
+  @apply bg-isabelline pl-4;
+}
+
+/* submenu aufklapp mechanik */
+.menu--horizontal .menu__submenu {
+  @apply hidden;
+}
+.menu--horizontal .menu__entry:hover .menu__submenu,
+.menu--horizontal .menu__entry--parent:hover .menu__submenu {
+  @apply block absolute top-10 z-50;
+}
+/* ende submenu aufklapp mechanik */
+
+.menu__entry,
+.menu__entry--parent {
+  @apply flex flex-col gap-1 bg-ghostwhite px-2 py-2;
+}
+.menu--horizontal .menu__entry,
+.menu--horizontal .menu__entry--parent {
+  @apply flex flex-row gap-1 bg-isabelline px-2 py-2;
+}
+.menu__link {
+  @apply text-onyx text-sm md:text-base font-bold truncate;
+}
+.menu__link--active-trail {
+  @apply border-b-2 border-lava;
+}
+
+/* menu anpassungen fuer sektionen */
+section[name="message"] .menu__entry {
+  @apply bg-transparent px-0;
+}
+section[name="message"] .menu__link {
+  @apply inline-flex items-center px-1 py-0.5 bg-onyx-light text-[10px] font-bold text-white no-underline hover:bg-onyx-dark hover:ring-2 hover:ring-offset-2 hover:ring-lava focus:ring-2 focus:ring-offset-2 focus:ring-lava;
+}
+section[name="message"] .icon {
+  @apply fill-transparent stroke-white hover:stroke-lava;
+}
+
+
+section[name="header"] .menu--horizontal {
+  @apply flex flex-row gap-0 md:gap-1 lg:gap-2;
+}
+
+section[name="header"] .menu__entry {
+  @apply bg-transparent;
+}
+section[name="header"] .menu__link {
+  @apply inline-flex items-center px-1 md:px-4 py-0 h-[45px] border border-gray-300 shadow-sm text-sm md:text-base font-bold text-black no-underline honeyyellow-gradient hover:ring-2 hover:ring-offset-2 hover:ring-honeyyellow focus:ring-2 focus:ring-offset-2 focus:ring-honeyyellow;
+}
+section[name="header"] .menu__link::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: no-repeat var(--icon-package);
+  padding-left: 2rem;
+  @apply hidden md:block;
+}
+section[name="header"] .menu__link--active-trail {
+  @apply border-b-2 border-white;
+}
+
+
+
+
+
+/* weiterlesen grid block */
 #block-swiftly-views-block-seite-bereiche-block-1-2 {
   @apply bg-isabelline p-4;
 }
 
+/* views-view-grid */
+.views-view-grid {
+  --grid-layout-gap: 2rem;
+  --grid-column-count: 12;
+  --grid-item--min-width: 400px;
+}
+.views-view-grid--columns {
+  --grid-column-count: var(--grid-column-count);
+}
+.views-view-grid--horizontal {
+  --gap-count: calc(var(--grid-column-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+  --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+  gap: var(--grid-layout-gap);
+}
+
 /* cards */
 .card {
-  @apply max-w-sm border shadow-md;
+  @apply flex flex-col max-w-sm h-full bg-white border shadow-md;
+  width: var(--grid-item--min-width);
 }
-.card img {
-  @apply w-full m-0;
+/* horizontal cards */
+.card__horizontal--right,
+.card__horizontal--left {
+  @apply flex flex-col md:flex-row bg-white text-onyx border max-w-screen-2xl mx-auto shadow-md my-20;
 }
-.card .card-body {
+
+/* cards inner elements */
+.card__body {
   @apply p-4;
 }
-.card .card-title {
-  @apply font-bold text-xl mb-2;
+.card__horizontal--right .card__body,
+.card__horizontal--left .card__body {
+  @apply p-4;
 }
-.card .card-text {
-  @apply text-neutral-700 text-base;
+.card__horizontal--right .card__body {
+  @apply order-first;
 }
-.card .btn {
-  @apply block mt-4;
+.card__horizontal--left .card__body {
+  @apply order-last;
+}
+
+.card__horizontal--right .card__figure {
+  @apply order-last;
+}
+.card__horizontal--left .card__figure {
+  @apply order-first;
+}
+
+/* cards other inner elements */
+.card__image,
+.card img,
+.card svg {
+  @apply w-full m-0;
+}
+.card__horizontal--left .card__image,
+.card__horizontal--left img,
+.card__horizontal--left svg,
+.card__horizontal--right .card__image,
+.card__horizontal--right img,
+.card__horizontal--right svg {
+  @apply object-cover w-full h-full;
+}
+
+.card__title {
+  @apply font-bold text-lg leading-tight text-ellipsis overflow-hidden mb-2;
+}
+.card__subtitle {
+  @apply font-bold text-base leading-tight text-ellipsis overflow-hidden mb-2;
+}
+.card__text {
+  @apply text-neutral-700 text-base leading-snug text-ellipsis overflow-hidden;
+}
+
+.card .btn,
+.card__horizontal--left .btn,
+.card__horizontal--right .btn {
+  @apply mt-4;
 }
 
 /* cards effects */
 .card:hover,
 .card:focus,
-.card:active {
+.card:active,
+.card__horizontal--left:hover,
+.card__horizontal--left:focus,
+.card__horizontal--left:active,
+.card__horizontal--right:hover,
+.card__horizontal--right:focus,
+.card__horizontal--right:active {
   @apply shadow-xl;
 }

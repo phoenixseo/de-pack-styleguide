@@ -39,7 +39,9 @@
     {% endif %}
 
     {{ title_prefix }}
-    <div{{ title_attributes.setAttribute('id', heading_id).addClass('block-title') }}>{{ configuration.label }}</div>
+    <div{{ title_attributes.setAttribute('id', heading_id).addClass('block-title') }}>
+      <span>{{ configuration.label }}</span>
+    </div>
     {{ title_suffix }}
 
     {# Menu. #}

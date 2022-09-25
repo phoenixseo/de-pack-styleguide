@@ -16,14 +16,11 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
-    'flex',
-    'flex-col',
-    'lg:flex-row',
     'gap-8',
   ]
 %}
 {% if content %}
-<section name="content_below" class="w-full bg-neutral-100 my-8 py-8 px-4">
+<section name="content_below" class="w-full my-8 py-8 px-4">
   <div {{ attributes.addClass(classes) }}>
     {{ content }}
   </div>

@@ -29,15 +29,31 @@
 {%
   set classes = [
     'grid',
-    'grid-cols-' ~ options.columns,
+    'grid-cols-1',
+    'sm:grid-cols-2',
+    'lg:grid-cols-4',
+    'xl:grid-cols-6',
+    'lg:grid-cols-' ~ options.columns,
     'gap-4',
     'my-8',
+    'justify-items-center',
+    'items-stretch',
+  ]
+%}
+{%
+  set grid_classes = [
+    'views-view-grid',
+    'views-view-grid--horizontal',
+    'my-8',
+    'justify-center',
+    'justify-items-center',
+    'items-stretch',
   ]
 %}
 {% if title %}
   <div>{{ title }}</div>
 {% endif %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(grid_classes) }} style="--grid-column-count: {{ options.columns }}">
   {% for row in items %}
 
     {% for column in row.content %}
